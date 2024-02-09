@@ -1,15 +1,14 @@
 import { useCallback, useMemo, useRef, useState } from 'react'
 import { searchMovies } from '../services/searchMovies.js'
-
 export function useMovies ({ search, sort }) {
-  const [movies, setMovies] = useState([])
+  const [movies, setMovies] = useState()
   const [loading, setLoading] = useState(false)
   const [, setError] = useState(null)
   // en este caso el error no se usa, pero Lo hice para tener una idea de cono funcionaria un manejo de erorres con el try cathc finally
   const previousSearch = useRef(search)
 
   const getMovies = useCallback(async ({ search }) => {
-    if (search === previousSearch.current) return
+    if (search === previousSearch.current && search) return
     setLoading(true)
     try {
       const newMovies = await searchMovies({ search })
@@ -31,6 +30,5 @@ export function useMovies ({ search, sort }) {
         : movies
     }
   }, [sort, movies])
-
   return { movies: sortedMovies, getMovies, loading }
 }

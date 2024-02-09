@@ -3,7 +3,7 @@ function ListOfMovies ({ movies }) {
     <ul className='movies'>
       {movies.map(movie => (
         <li key={movie.id} className='movie'>
-          <p>{movie.title}</p>
+          <p className='title-text'>{movie.title}</p>
           <p>{movie.year}</p>
           <img src={movie.image} alt={`image of ${movie.Title}`} />
         </li>)

@@ -1,0 +1,120 @@
+{
+    "results": {
+      "_id": "61e58509d8f3c0931e423367",
+      "id": "tt0439572",
+      "ratingsSummary": {
+        "aggregateRating": 6.7,
+        "voteCount": 198741,
+        "__typename": "RatingsSummary"
+      },
+      "episodes": null,
+      "primaryImage": {
+        "id": "rm3802082561",
+        "width": 2024,
+        "height": 3000,
+        "url": "https://m.media-amazon.com/images/M/MV5BZWE2ZWE5MDQtMTJlZi00MTVjLTkxOTgtNmNiYjg2NDIxN2NhXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg",
+        "caption": {
+          "plainText": "Michael Keaton, Ezra Miller, and Sasha Calle in The Flash (2023)",
+          "__typename": "Markdown"
+        },
+        "__typename": "Image"
+      },
+      "titleType": {
+        "displayableProperty": {
+          "value": {
+            "plainText": "",
+            "__typename": "Markdown"
+          },
+          "__typename": "DisplayableTitleTypeProperty"
+        },
+        "text": "Movie",
+        "id": "movie",
+        "isSeries": false,
+        "isEpisode": false,
+        "categories": [
+          {
+            "value": "movie",
+            "__typename": "TitleTypeCategory"
+          }
+        ],
+        "canHaveEpisodes": false,
+        "__typename": "TitleType"
+      },
+      "genres": {
+        "genres": [
+          {
+            "text": "Action",
+            "id": "Action",
+            "__typename": "Genre"
+          },
+          {
+            "text": "Adventure",
+            "id": "Adventure",
+            "__typename": "Genre"
+          },
+          {
+            "text": "Fantasy",
+            "id": "Fantasy",
+            "__typename": "Genre"
+          },
+          {
+            "text": "Sci-Fi",
+            "id": "Sci-Fi",
+            "__typename": "Genre"
+          }
+        ],
+        "__typename": "Genres"
+      },
+      "titleText": {
+        "text": "The Flash",
+        "__typename": "TitleText"
+      },
+      "originalTitleText": {
+        "text": "The Flash",
+        "__typename": "TitleText"
+      },
+      "releaseYear": {
+        "year": 2023,
+        "endYear": null,
+        "__typename": "YearRange"
+      },
+      "releaseDate": {
+        "day": 15,
+        "month": 6,
+        "year": 2023,
+        "__typename": "ReleaseDate"
+      },
+      "runtime": {
+        "seconds": 8640,
+        "displayableProperty": {
+          "value": {
+            "plainText": "2h 24m",
+            "__typename": "Markdown"
+          },
+          "__typename": "DisplayableTitleRuntimeProperty"
+        },
+        "__typename": "Runtime"
+      },
+      "series": null,
+      "meterRanking": {
+        "currentRank": 146,
+        "rankChange": {
+          "changeDirection": "DOWN",
+          "difference": 13,
+          "__typename": "MeterRankChange"
+        },
+        "__typename": "TitleMeterRanking"
+      },
+      "plot": {
+        "plotText": {
+          "plainText": "Barry Allen uses his super speed to change the past, but his attempt to save his family creates a world without super heroes, forcing him to race for his life in order to save the future.",
+          "__typename": "Markdown"
+        },
+        "language": {
+          "id": "en-US",
+          "__typename": "DisplayableLanguage"
+        },
+        "__typename": "Plot"
+      }
+    }
+  }
