@@ -1,7 +1,11 @@
 import movieInfo from '../mocks/mockinfo.json'
 import './styles/MoviePage.css'
 import logo from '../assets/IMDB_Logo.svg'
+import { useParams } from 'react-router-dom'
+useParams
 export function MoviePage (selectedMovie) {
+
+  const { name } = useParams();
   const movie = {
     title: movieInfo.results.titleText.text,
     info: movieInfo.results.plot.plotText.plainText,
@@ -26,7 +30,7 @@ export function MoviePage (selectedMovie) {
 
         </section>
         <section className='MovieInfo-right'>
-          <h1 className='movieTitle'>{movie.title}</h1>
+          <h1 className='movieTitle'>{name}</h1>
 
           <p className='primary-info'>{movie.info}</p>
 

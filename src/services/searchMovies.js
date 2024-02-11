@@ -19,7 +19,8 @@ export async function searchMovies ({ search }) {
         id: movie?.id ?? '',
         title: movie.originalTitleText?.text ?? '',
         year: movie.releaseYear?.year ?? '???',
-        image: movie.primaryImage?.url ?? 'https://www.prokerala.com/movies/assets/img/no-poster-available.jpg'
+        image: movie.primaryImage?.url ?? 'https://www.prokerala.com/movies/assets/img/no-poster-available.jpg',
+        searchParameter: movie.id
 
       }))
     } catch (e) {
@@ -42,7 +43,8 @@ export async function searchMovies ({ search }) {
         id: movie?.id ?? '',
         title: movie.originalTitleText?.text ?? '',
         year: movie.releaseYear?.year ?? '???',
-        image: movie.primaryImage?.url ?? 'https://www.prokerala.com/movies/assets/img/no-poster-available.jpg'
+        image: movie.primaryImage?.url ?? 'https://www.prokerala.com/movies/assets/img/no-poster-available.jpg',
+        searchParameter: movie.id
 
       }))
     } catch (e) {
@@ -51,6 +53,32 @@ export async function searchMovies ({ search }) {
   }
 }
 
-export async function getMovieInfo () {
+export async function getMovieInfo (searchParameter) {
+  const url = `https://moviesdatabase.p.rapidapi.com/titles/${searchParameter}?info=base_info`
+  const options = {
+    method: 'GET',
+    headers: {
+      'X-RapidAPI-Key': 'f0e954e928msh0bd1dc6eceb7d11p19e4a5jsn5e5612867c7a',
+      'X-RapidAPI-Host': 'moviesdatabase.p.rapidapi.com'
+    }
+  }
+  const response = await fetch(url, options)
+  const data = await response.json()
+  const movieInfo = data
 
+  return {
+    title: movieInfo.results.titleText.text,
+    info: movieInfo.results.plot.plotText.plainText,
+    image: movieInfo.results.primaryImage.url,
+    ranking: movieInfo.results.ratingsSummary.aggregateRating,
+    genres: movieInfo.results.genres.genres,
+    releaseDate: () => {
+      const day = movieInfo.results.releaseDate.day
+      const month = movieInfo.results.releaseDate.month
+      const year = movieInfo.results.releaseDate.year
+      return [day, month, year].join('-')
+    },
+    duration: movieInfo.results.runtime.displayableProperty.value.plainText
+
+  }
 }
