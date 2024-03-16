@@ -1,4 +1,4 @@
-const API = import.meta.env.VITE_TMDB_API_TOKEN
+const API = process.env.VITE_TMDB_API_TOKEN
 const options = {
   method: 'GET',
   headers: {
