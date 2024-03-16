@@ -2,21 +2,22 @@ import { useEffect } from 'react'
 import './styles/HomePage.css'
 import { Movies } from '../components/Movies'
 import { useMovies } from '../hooks/useMovies'
-import Slideshow from '../components/Gallery'
+import { useParams } from 'react-router-dom'
 import { NavMenu } from '../components/NavMenu'
-export function HomePage ({ type }) {
-  const { movies, getMovies, loading } = useMovies({ search: '', sort: false })
+export function SearchPage () {
+  const { search, sort } = useParams()
+  console.log(sort)
+  const { movies, getMovies, loading } = useMovies({ search, sort })
   useEffect(() => {
-    getMovies({ search: '', type })// paso el objeto en si
+    async function loadMovies () {
+      getMovies({ search })// paso el objeto en si
+    }
+    loadMovies()
   }, [])
-
   return (
     <div className='homepage'>
       <NavMenu />
 
-      {!loading
-        ? <Slideshow movies={movies?.slice(0, 5)} />
-        : null}
       <main>
         {loading ? <p>Cargando...</p> : <Movies movies={{ movies, type: null }} />}
       </main>

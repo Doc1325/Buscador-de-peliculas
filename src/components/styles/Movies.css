@@ -1,0 +1,41 @@
+.movies a {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  .movies a:hover {
+    color: rgb(15, 116, 224);
+  }
+  
+  .movies {
+    box-sizing: border-box;
+   padding: 0 20px;
+   list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    width: 100%;
+    gap: 2rem;
+    text-align: center;
+    white-space: nowrap;
+  
+  }
+
+  .movie{
+    cursor: pointer;
+  }
+  
+  .movie img {  
+    width: 200px;
+    height: 300px;
+    border-radius: 8px ;
+    margin-top: 16px ;
+    box-shadow: 0 5px 10px rgba(50, 49, 49, 0.2);
+  
+  }
+  
+  .movie h3, .movie p {
+    font-weight: bolder;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;  
+  
+  }

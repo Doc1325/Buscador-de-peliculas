@@ -1,25 +1,22 @@
-import { getMovieInfo } from '../services/searchMovies'
-import { Outlet, Link } from 'react-router-dom'
-
+import { Link } from 'react-router-dom'
+import './styles/Movies.css'
 function ListOfMovies ({ movies }) {
   return (
     <ul className='movies'>
-      {movies.map(movie => (
-        <li key={movie.id} className='movie' onClick={() => handleMovie(movie.searchParameter)}>
-          <Link to={`/Movie/${movie.title}`}>
+      {movies.movies.map(movie => (
+
+        <li key={movie.id} className='movie'>
+          <Link to={`/${movie.type ?? movies.type}/${movie.searchParameter}`}>
+
+            <img src={movie.image} alt={`image of ${movie.Title}`} />
             <p className='title-text'>{movie.title}</p>
             <p>{movie.year}</p>
-            <img src={movie.image} alt={`image of ${movie.Title}`} />
           </Link>
         </li>)
       )}
     </ul>
 
   )
-}
-
-export async function handleMovie (searchParameter) {
-  console.log((await getMovieInfo(searchParameter)).duration)
 }
 
 function NoMoviesResult () {
@@ -29,7 +26,7 @@ function NoMoviesResult () {
 }
 
 export function Movies ({ movies }) {
-  const hasmovies = movies?.length
+  const hasmovies = movies.movies?.length
   return (
 
     hasmovies ? <ListOfMovies movies={movies} /> : <NoMoviesResult />

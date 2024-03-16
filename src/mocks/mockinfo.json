@@ -1,120 +1,1935 @@
+
+"adult": false,
+"backdrop_path": "/zW0v2YT74C6tRafzqqBkfSqLAN0.jpg",
+"created_by": [
 {
-    "results": {
-      "_id": "61e58509d8f3c0931e423367",
-      "id": "tt0439572",
-      "ratingsSummary": {
-        "aggregateRating": 6.7,
-        "voteCount": 198741,
-        "__typename": "RatingsSummary"
-      },
-      "episodes": null,
-      "primaryImage": {
-        "id": "rm3802082561",
-        "width": 2024,
-        "height": 3000,
-        "url": "https://m.media-amazon.com/images/M/MV5BZWE2ZWE5MDQtMTJlZi00MTVjLTkxOTgtNmNiYjg2NDIxN2NhXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg",
-        "caption": {
-          "plainText": "Michael Keaton, Ezra Miller, and Sasha Calle in The Flash (2023)",
-          "__typename": "Markdown"
-        },
-        "__typename": "Image"
-      },
-      "titleType": {
-        "displayableProperty": {
-          "value": {
-            "plainText": "",
-            "__typename": "Markdown"
-          },
-          "__typename": "DisplayableTitleTypeProperty"
-        },
-        "text": "Movie",
-        "id": "movie",
-        "isSeries": false,
-        "isEpisode": false,
-        "categories": [
-          {
-            "value": "movie",
-            "__typename": "TitleTypeCategory"
-          }
-        ],
-        "canHaveEpisodes": false,
-        "__typename": "TitleType"
-      },
-      "genres": {
-        "genres": [
-          {
-            "text": "Action",
-            "id": "Action",
-            "__typename": "Genre"
-          },
-          {
-            "text": "Adventure",
-            "id": "Adventure",
-            "__typename": "Genre"
-          },
-          {
-            "text": "Fantasy",
-            "id": "Fantasy",
-            "__typename": "Genre"
-          },
-          {
-            "text": "Sci-Fi",
-            "id": "Sci-Fi",
-            "__typename": "Genre"
-          }
-        ],
-        "__typename": "Genres"
-      },
-      "titleText": {
-        "text": "The Flash",
-        "__typename": "TitleText"
-      },
-      "originalTitleText": {
-        "text": "The Flash",
-        "__typename": "TitleText"
-      },
-      "releaseYear": {
-        "year": 2023,
-        "endYear": null,
-        "__typename": "YearRange"
-      },
-      "releaseDate": {
-        "day": 15,
-        "month": 6,
-        "year": 2023,
-        "__typename": "ReleaseDate"
-      },
-      "runtime": {
-        "seconds": 8640,
-        "displayableProperty": {
-          "value": {
-            "plainText": "2h 24m",
-            "__typename": "Markdown"
-          },
-          "__typename": "DisplayableTitleRuntimeProperty"
-        },
-        "__typename": "Runtime"
-      },
-      "series": null,
-      "meterRanking": {
-        "currentRank": 146,
-        "rankChange": {
-          "changeDirection": "DOWN",
-          "difference": 13,
-          "__typename": "MeterRankChange"
-        },
-        "__typename": "TitleMeterRanking"
-      },
-      "plot": {
-        "plotText": {
-          "plainText": "Barry Allen uses his super speed to change the past, but his attempt to save his family creates a world without super heroes, forcing him to race for his life in order to save the future.",
-          "__typename": "Markdown"
-        },
-        "language": {
-          "id": "en-US",
-          "__typename": "DisplayableLanguage"
-        },
-        "__typename": "Plot"
-      }
-    }
-  }
+"id": 566273,
+"credit_id": "623ca00ad1a89300885f6b46",
+"name": "Kyle Killen",
+"gender": 2,
+"profile_path": "/aOMs0YHDM4vWM23sQQ5vR08fVQ2.jpg"
+},
+{
+"id": 1324451,
+"credit_id": "623c9fe4a7e363008bde5e74",
+"name": "Steven Kane",
+"gender": 2,
+"profile_path": null
+}
+],
+"episode_run_time": [],
+"first_air_date": "2022-03-24",
+"genres": [
+{
+"id": 10759,
+"name": "Action & Adventure"
+},
+{
+"id": 10765,
+"name": "Sci-Fi & Fantasy"
+}
+],
+"homepage": "https://www.paramountplus.com/shows/halo/",
+"id": 52814,
+"in_production": true,
+"languages": [
+"en"
+],
+"last_air_date": "2024-02-22",
+"last_episode_to_air": {
+"id": 5081247,
+"name": "Reach",
+"overview": "Un asalto del Covenant amenaza el fuerte; el equipo Silver se enfrenta a un arrollador enemigo.",
+"vote_average": 9.2,
+"vote_count": 6,
+"air_date": "2024-02-22",
+"episode_number": 4,
+"episode_type": "standard",
+"production_code": "",
+"runtime": 46,
+"season_number": 2,
+"show_id": 52814,
+"still_path": "/uyj5RbCKX03yURdryQ6jXlLfaBD.jpg"
+},
+"name": "Halo",
+"next_episode_to_air": {
+"id": 5081248,
+"name": "Episodio 5",
+"overview": "",
+"vote_average": 0,
+"vote_count": 0,
+"air_date": "2024-02-29",
+"episode_number": 5,
+"episode_type": "standard",
+"production_code": "",
+"runtime": null,
+"season_number": 2,
+"show_id": 52814,
+"still_path": "/82jr9i1Mj16QZ8q4ejd4BmOw8ua.jpg"
+},
+"networks": [
+{
+"id": 4330,
+"logo_path": "/fi83B1oztoS47xxcemFdPMhIzK.png",
+"name": "Paramount+",
+"origin_country": "US"
+}
+],
+"number_of_episodes": 17,
+"number_of_seasons": 2,
+"origin_country": [
+"US"
+],
+"original_language": "en",
+"original_name": "Halo",
+"overview": "En el siglo 26, la humanidad tiene que lidiar con una amenaza alienígena conocida como the Covenant (El Pacto). Halo tejerá historias personales repletas de acción, aventura y una enriquecedora visión del futuro. La serie es una historia independiente inspirada en la franquicia del videojuego, en lugar de una continuación, adaptación o precuela.",
+"popularity": 2825.06,
+"poster_path": "/m8tW2ssuqib10BUlUZfbYlfqEfd.jpg",
+"production_companies": [
+{
+"id": 7671,
+"logo_path": "/r7KeUsNVv0iggZRh6XmNNq2OEw1.png",
+"name": "Amblin Television",
+"origin_country": "US"
+},
+{
+"id": 115160,
+"logo_path": "/b5e9wBarqIoekgSLSkvpOXMc7IF.png",
+"name": "One Big Picture",
+"origin_country": "GB"
+},
+{
+"id": 115161,
+"logo_path": null,
+"name": "Chapter Eleven",
+"origin_country": "US"
+},
+{
+"id": 48856,
+"logo_path": "/gyEyIXqnVkOxjbASaWthewkjGgI.png",
+"name": "343 Industries",
+"origin_country": "US"
+},
+{
+"id": 4343,
+"logo_path": "/rXq1B1Hnkdnw6soz1zoGcslK3wb.png",
+"name": "Showtime Networks",
+"origin_country": "US"
+},
+{
+"id": 192085,
+"logo_path": null,
+"name": "David Wiener",
+"origin_country": ""
+}
+],
+"production_countries": [
+{
+"iso_3166_1": "GB",
+"name": "United Kingdom"
+},
+{
+"iso_3166_1": "US",
+"name": "United States of America"
+}
+],
+"seasons": [
+{
+"air_date": "2022-03-24",
+"episode_count": 18,
+"id": 284981,
+"name": "Especiales",
+"overview": "",
+"poster_path": null,
+"season_number": 0,
+"vote_average": 0
+},
+{
+"air_date": "2022-03-24",
+"episode_count": 9,
+"id": 105701,
+"name": "Temporada 1",
+"overview": "",
+"poster_path": "/nJUHX3XL1jMkk8honUZnUmudFb9.jpg",
+"season_number": 1,
+"vote_average": 6.7
+},
+{
+"air_date": "2024-02-08",
+"episode_count": 8,
+"id": 368186,
+"name": "Temporada 2",
+"overview": "En la segunda temporada, el Jefe Maestro John-117 lidera a su equipo de espartanos de élite contra la amenaza alienígena conocida como el Covenant. A raíz de un evento impactante en un planeta desolado, John no puede evitar la sensación de que su guerra está a punto de cambiar y arriesga todo para demostrar lo que nadie más creerá: que el Covenant se está preparando para atacar la mayor fortaleza de la humanidad. Con la galaxia al borde del abismo, John se embarca en un viaje para encontrar la clave para la salvación de la humanidad, o su extinción: el Halo.",
+"poster_path": "/jWfllhIlNQYhlkqMxhdIJW8dQwZ.jpg",
+"season_number": 2,
+"vote_average": 8.8
+}
+],
+"spoken_languages": [
+{
+"english_name": "English",
+"iso_639_1": "en",
+"name": "English"
+}
+],
+"status": "Returning Series",
+"tagline": "Encuentra el Halo y gana la Guerra",
+"type": "Scripted",
+"vote_average": 8.325,
+"vote_count": 2248,
+"videos": {
+"results": [
+{
+"iso_639_1": "es",
+"iso_3166_1": "ES",
+"name": "HALO Tráiler Español Latino 2 (Nuevo, 2022)",
+"key": "u7oRIRn3mc4",
+"site": "YouTube",
+"size": 1080,
+"type": "Trailer",
+"official": false,
+"published_at": "2022-02-23T14:31:52.000Z",
+"id": "627faffccee481005027e6b3"
+}
+]
+},
+"similar": {
+"page": 1,
+"results": [
+{
+"adult": false,
+"backdrop_path": "/rrIYT7yyDJTHQLDnQyUm2y9zWPQ.jpg",
+"genre_ids": [
+10759
+],
+"id": 100627,
+"origin_country": [
+"US"
+],
+"original_language": "en",
+"original_name": "Street Fighter: Resurrection",
+"overview": "",
+"popularity": 6.786,
+"poster_path": "/5Skv2BxxqghtiHHw3Rc0g5g3dwd.jpg",
+"first_air_date": "2016-03-15",
+"name": "Street Fighter: Resurrection",
+"vote_average": 4.8,
+"vote_count": 5
+},
+{
+"adult": false,
+"backdrop_path": "/rRLwVEle5bKWhMXvG7eAjmwyFzJ.jpg",
+"genre_ids": [
+10765,
+18,
+10759,
+9648
+],
+"id": 2840,
+"origin_country": [
+"CA",
+"US"
+],
+"original_language": "en",
+"original_name": "Earth: Final Conflict",
+"overview": "\"La Tierra: conflicto final\" nos sitúa en pleno siglo XXI, tres años después del primer contacto con una raza extraterrestre, los Taelons. Su llegada ha supuesto para la Tierra un gran avance, el fin del hambre, las guerras y de muchas enfermedades. Los Taelons parecen desear únicamente compartir sus conocimientos y enriquecerse con su convivencia en paz con la raza humana. Desean ser compañeros que ayuden a la humanidad a dar un importante paso. Consideran que la Tierra se encuentra en una encrucijada evolutiva y que para la especie humana ha llegado un momento crucial en el que deben dar el siguiente paso hacia fronteras inciertas. Sin embargo hay gente que no confía en los Taelons, también conocidos como compañeros, y, secretamente, conspira para descubrir cuales son sus verdaderos propósitos.",
+"popularity": 159.485,
+"poster_path": "/xOcw7r57ppfPHdaTIauMnE64Npz.jpg",
+"first_air_date": "1997-10-06",
+"name": "La Tierra: conflicto final",
+"vote_average": 6.816,
+"vote_count": 79
+},
+{
+"adult": false,
+"backdrop_path": "/gRhEQqSh0IfxA6Wmd1OTb5vRSHf.jpg",
+"genre_ids": [
+10765,
+10759,
+18
+],
+"id": 4604,
+"origin_country": [
+"US"
+],
+"original_language": "en",
+"original_name": "Smallville",
+"overview": "Serie que narra los inicios de Superman -Clark Kent- en su pueblo natal, Smallville. Allí vivía con sus padres, estudiaba en el instituto local y conoció a su primera novia, Lana Lang, y a su futuro rival, Lex Luthor.",
+"popularity": 365.944,
+"poster_path": "/iF3ex3033YkTHHjChXVOawr88GI.jpg",
+"first_air_date": "2001-10-16",
+"name": "Smallville",
+"vote_average": 8.2,
+"vote_count": 3863
+},
+{
+"adult": false,
+"backdrop_path": "/qq9ZQLpYAj0PwI2uWPPuLyCNW6h.jpg",
+"genre_ids": [
+10765,
+18
+],
+"id": 4624,
+"origin_country": [
+"US"
+],
+"original_language": "en",
+"original_name": "Roswell",
+"overview": "En Roswell, una población de Nuevo México donde se dice que en 1947 se estrelló un ovni, comienzan a suceder cosas extrañas. Unos años más tarde, en 1999, un grupo de adolescentes mitad alienígenas, tendrán que convivir con los humanos y descubrir por que están en la Tierra, en un universo secreto lleno de poderes sobrehumanos.",
+"popularity": 90.583,
+"poster_path": "/47CaTpah62bxbAkWANDzZdJxkxw.jpg",
+"first_air_date": "1999-10-06",
+"name": "Roswell",
+"vote_average": 7.7,
+"vote_count": 418
+},
+{
+"adult": false,
+"backdrop_path": "/5mXZ0sdVPfj4bSkhPSWwTX2LcM5.jpg",
+"genre_ids": [
+10765,
+10759,
+9648
+],
+"id": 4629,
+"origin_country": [
+"CA",
+"US"
+],
+"original_language": "en",
+"original_name": "Stargate SG-1",
+"overview": "Stargate SG-1 es una serie televisiva estadounidense derivada del largometraje de ciencia ficción 'Stargate: Puerta a las Estrellas' (1994). Producida por los estudios Metro Goldwyn Mayer. Esta serie se centra en las vivencias y aventuras de un equipo de militares y científicos miembros de un proyecto ultra-secreto de las Fuerzas Aéreas de los Estados Unidos, que utiliza un ingenio extraterrestre (Stargate) para desplazarse a otros planetas de manera casi instantánea.",
+"popularity": 599.361,
+"poster_path": "/dQjmI7XxI47v8IM2MUysHG0LuU2.jpg",
+"first_air_date": "1997-07-27",
+"name": "Stargate SG-1",
+"vote_average": 8.2,
+"vote_count": 1450
+},
+{
+"adult": false,
+"backdrop_path": null,
+"genre_ids": [
+10765,
+10762,
+35,
+18
+],
+"id": 4661,
+"origin_country": [
+"US"
+],
+"original_language": "en",
+"original_name": "The Journey of Allen Strange",
+"overview": "",
+"popularity": 35.654,
+"poster_path": "/msezK5YsMeTpL8q8Vsvwe3cM1MZ.jpg",
+"first_air_date": "1997-11-08",
+"name": "The Journey of Allen Strange",
+"vote_average": 8,
+"vote_count": 4
+},
+{
+"adult": false,
+"backdrop_path": "/v5hLUEpbn3G3oLXLdF7lFikDivb.jpg",
+"genre_ids": [
+16,
+10765,
+10759,
+35,
+10762
+],
+"id": 4686,
+"origin_country": [
+"US"
+],
+"original_language": "en",
+"original_name": "Ben 10",
+"overview": "Serie de TV (2005-2008). Ben 10 cuenta las aventuras de Ben Tennyson, un niño normal de diez años que descubre en sus vacaciones de verano un extraño reloj extraterrestre dentro de un meteorito que chocó contra la Tierra. Ben pronto se da cuenta de que este reloj no es un aparato cualquiera, sino el artefacto alienígena mas poderoso del Universo, el Omnitrix. Este reloj le permite transformarse en diez seres extraterrestres distintos sin perder su personalidad, aunque eventualmente sería capaz de desbloquear nuevos alienígenas. Ahora, con la ayuda del Omnitrix, Ben, junto a su prima Gwen y a su abuelo Max combatirán un sinfín de villanos, asegurando que este verano sea sin duda \"el mejor verano de la historia\". En 2008 se estrenó una segunda serie que continúa la historia de esta primera, \"Ben 10: Alien Force\".",
+"popularity": 222.471,
+"poster_path": "/pT0NlYVIkwM2zAw9oUkePwrOlxW.jpg",
+"first_air_date": "2005-12-27",
+"name": "Ben 10",
+"vote_average": 8.1,
+"vote_count": 1548
+},
+{
+"adult": false,
+"backdrop_path": "/xOrBpYyCBNraCeMLlZwLMl9pyQ7.jpg",
+"genre_ids": [
+16,
+10759,
+10765
+],
+"id": 4695,
+"origin_country": [
+"US"
+],
+"original_language": "en",
+"original_name": "Battle of the Planets",
+"overview": "Gatchaman es un anime que trata de las aventuras de 5 jóvenes defendiendo a la Tierra de las amenazas del Espacio Exterior. Fue producida por la Tatsunoko Productions. Se emitió en Japón en octubre de 1972. Consta de 105 episodios, con cuyo metraje se han hecho en Occidente varias adaptaciones, como La batalla de los planetas (conocida popularmente como Comando G) y Fuerza G.\n\nEn Japón, a raíz del éxito de Gatchaman, se produjeron dos secuelas: Gatchaman II ,Gatchaman F y en el año del 2013 se produjo y emitió la serie ´´Gatchaman Crowds´´. Ambas también han sido emitidas en otros países, y en particular, la distribuidora estadounidense Saban combinó episodios de ambas para dar lugar a una nueva adaptación (Eagle Riders o Comando águila), que se ha emitido en multitud de países.\n\nExisten igualmente tres episodios adicionales, producidos en 1994 y lanzados en formato OVA en Japón en ese mismo año. En 2013 se realizó un reboot de la saga, denominado Gatchaman Crowds",
+"popularity": 14.698,
+"poster_path": "/gYvvllQQ7Hb8hgm0PcqVstzFKcb.jpg",
+"first_air_date": "1978-09-18",
+"name": "Comando G",
+"vote_average": 6.672,
+"vote_count": 29
+},
+{
+"adult": false,
+"backdrop_path": "/87WbN1Ia1L4p75gkOuwbOlU5MsB.jpg",
+"genre_ids": [
+16,
+10759,
+10765
+],
+"id": 128237,
+"origin_country": [
+"JP"
+],
+"original_language": "ja",
+"original_name": "聖剣伝説 Legend of Mana -The Teardrop Crystal-",
+"overview": "Legend of Mana está ambientado en el mundo ficticio de Fa’Diel. El Árbol del Maná, dador de maná y vida para el mundo, se quemó casi por completo nueve siglos antes de los acontecimientos del juego. Estalló una guerra entre hadas, humanos y otros que buscaban el escaso poder del maná que quedaba. Cuando la guerra concluyó, el Árbol del Maná quemado dormía mientras volvía a crecer y las numerosas tierras del mundo se almacenaban en antiguos artefactos. Un héroe, controlado por el jugador, se encarga de restaurar el mundo, y el maná, a su antiguo ser. Las Tierras de Fa’Diel están pobladas por un gran número de criaturas diferentes, incluyendo humanos, hadas, demonios, la raza Jumi de corazón de joya, Sproutlings y Flowerlings, osos mineros llamados Dudbears, y seres sombríos del Inframundo conocidos como Shadoles.",
+"popularity": 20.441,
+"poster_path": "/vZhIZIfoIXLenv5xP8qyAyfaLBn.jpg",
+"first_air_date": "2022-10-08",
+"name": "Seiken Densetsu Legend of Mana: The Teardrop Crystal",
+"vote_average": 4.7,
+"vote_count": 8
+},
+{
+"adult": false,
+"backdrop_path": "/3LF51gmi99uo36FzNaT8udPkGpu.jpg",
+"genre_ids": [
+16,
+10759,
+10765,
+10768
+],
+"id": 77184,
+"origin_country": [
+"US"
+],
+"original_language": "en",
+"original_name": "Halo: The Fall of Reach",
+"overview": "Adaptación animada de \"La caída de Reach\", la aclamada novela de Eric Nylund basada en el universo de la saga de videojuegos Halo. Con una hora de duración en total, se estrenará junto a las versiones coleccionista de Halo 5.",
+"popularity": 80.534,
+"poster_path": "/11Hs7WmsW2htHTKQrx3nK9Ke8aG.jpg",
+"first_air_date": "2015-10-27",
+"name": "Halo The Fall of Reach",
+"vote_average": 6.939,
+"vote_count": 413
+},
+{
+"adult": false,
+"backdrop_path": "/iaOaxd0LgPaxSene0rYDtFUklBZ.jpg",
+"genre_ids": [
+10759,
+18,
+10762,
+10765
+],
+"id": 77238,
+"origin_country": [
+"JP",
+"US"
+],
+"original_language": "en",
+"original_name": "Kamen Rider: Dragon Knight",
+"overview": "Kit Taylor, el personaje principal, está buscando a su padre desaparecido, sin embargo, a veces tiene visiones en las cuales le habla y le envía mensajes crípticos, que a lo largo de la serie van tomando sentido. Encuentra una carta de contracto con su bestia Advent, que es un Dragón. Él también conoce a Len, quien es el Kamen Rider Wing Knight. Luego de varias peleas juntos, Len le revela que existe una dimensión paralela a la nuestra llamada Ventara, en la cual existían 12 guardianes de dicha dimensión que eran los Kamen Riders Originales, que luchaban contra un alienígena llamado el General Xaviax, que intentaba conquistar(Es una adaptación estadounidense de la serie original japonesa Kamen Rider Ryuki aunque la trama es ligeramente diferente)",
+"popularity": 22.166,
+"poster_path": "/4iUza77ACk3cpCqs4z4Fk5joJr8.jpg",
+"first_air_date": "2009-01-03",
+"name": "Kamen Rider: Dragon Knight",
+"vote_average": 8.185,
+"vote_count": 81
+},
+{
+"adult": false,
+"backdrop_path": "/yHhQMtghlkh9V7EdPNrRlmW0Nwz.jpg",
+"genre_ids": [
+10765,
+9648,
+18
+],
+"id": 4766,
+"origin_country": [
+"JP"
+],
+"original_language": "ja",
+"original_name": "ウルトラQ",
+"overview": "",
+"popularity": 12.343,
+"poster_path": "/rkUQt17oc0iKef3MbJZEQSzmHo2.jpg",
+"first_air_date": "1966-01-02",
+"name": "ウルトラQ",
+"vote_average": 8.143,
+"vote_count": 14
+},
+{
+"adult": false,
+"backdrop_path": "/kJVYs2p9SlU6YRZ7pJ0fE5mog2S.jpg",
+"genre_ids": [
+16,
+10759,
+10765
+],
+"id": 229858,
+"origin_country": [
+"JP"
+],
+"original_language": "ja",
+"original_name": "Fate/strange Fake",
+"overview": "",
+"popularity": 15.931,
+"poster_path": "/lBsBJIGYV7c1Yizva8LpZhghY4j.jpg",
+"first_air_date": "",
+"name": "Fate/strange Fake",
+"vote_average": 0,
+"vote_count": 0
+},
+{
+"adult": false,
+"backdrop_path": "/1dTwfqxFGpCvUuemfyY2uXLZPyZ.jpg",
+"genre_ids": [
+16,
+10765
+],
+"id": 77390,
+"origin_country": [
+"JP"
+],
+"original_language": "ja",
+"original_name": "パワードール",
+"overview": "",
+"popularity": 10.344,
+"poster_path": "/4hWAwzc99JrErHndObXnGuYOMo4.jpg",
+"first_air_date": "1996-03-01",
+"name": "パワードール",
+"vote_average": 10,
+"vote_count": 1
+},
+{
+"adult": false,
+"backdrop_path": "/weWO4v8C1jhCwiN8Y6jbcgn9Agg.jpg",
+"genre_ids": [
+10759,
+10765,
+10751
+],
+"id": 77396,
+"origin_country": [
+"JP"
+],
+"original_language": "ja",
+"original_name": "ウルトラセブン",
+"overview": "La Tierra se encuentra bajo un ataque alienígena y la Fuerza de Defensa Terrestre establece la Ultra Guardia para defenderla, un equipo élite con vehículos de alta tecnología y armamento, apoyado por Dan Moroboshi, quien es en realidad Ultra7.",
+"popularity": 29.909,
+"poster_path": "/ygQNyTYNEyLtbjUlKjJezv3C4O7.jpg",
+"first_air_date": "1967-10-01",
+"name": "Ultra Siete",
+"vote_average": 7.7,
+"vote_count": 105
+},
+{
+"adult": false,
+"backdrop_path": "/dSm99M5rXD7NEiA5af9ngdVyyME.jpg",
+"genre_ids": [
+16,
+10759,
+10762,
+10765
+],
+"id": 77405,
+"origin_country": [
+"JP"
+],
+"original_language": "ja",
+"original_name": "ロックマン 星に願いを",
+"overview": "",
+"popularity": 7.706,
+"poster_path": "/y6uzCRa3snms8x4olprzVTX0yEs.jpg",
+"first_air_date": "1993-06-08",
+"name": "ロックマン 星に願いを",
+"vote_average": 6,
+"vote_count": 5
+},
+{
+"adult": false,
+"backdrop_path": "/1SUH7zk14d84TuxWPi339Kobf4A.jpg",
+"genre_ids": [
+16,
+10765,
+10768
+],
+"id": 229746,
+"origin_country": [
+"US"
+],
+"original_language": "en",
+"original_name": "Genesis",
+"overview": "",
+"popularity": 2.702,
+"poster_path": null,
+"first_air_date": "2023-07-06",
+"name": "Genesis",
+"vote_average": 0,
+"vote_count": 0
+},
+{
+"adult": false,
+"backdrop_path": "/fnOceLd6ejBK9cAITB07easFc7Q.jpg",
+"genre_ids": [
+16,
+10759,
+10765
+],
+"id": 102432,
+"origin_country": [
+"JP"
+],
+"original_language": "ja",
+"original_name": "禍つヴァールハイト -ZUERST-",
+"overview": "La historia se centrará en dos jóvenes que viven y trabajan en el Imperio Wahrheit: Inumael, un joven empleado de una agencia de transportes, y Leocadio, un soldado inexperto que trabaja en el ejército imperial. Inumael está preocupado por cuidar de su hermana, mientras que Leocadio sueña con alcanzar el éxito en su profesión. El destino de ambos se cruzará tras cierto robo y deberán lidiar con una profecía que advierte de la resurrección de las \"luces\", un fenómeno que eras atrás liberó a monstruos y estuvo a punto de acabar con la humanidad.",
+"popularity": 11.71,
+"poster_path": "/ozhUqMOF6YZMaEyDLivbP7wXS87.jpg",
+"first_air_date": "2020-10-13",
+"name": "Magatsu Wahrheit: Zuerst",
+"vote_average": 7.5,
+"vote_count": 6
+},
+{
+"adult": false,
+"backdrop_path": "/hkAnDAZ4XnYb3Cr5EvlLe8yyuUL.jpg",
+"genre_ids": [
+16,
+10765
+],
+"id": 102727,
+"origin_country": [],
+"original_language": "ja",
+"original_name": "サクラ大戦 エコール・ド・巴里",
+"overview": "",
+"popularity": 10.098,
+"poster_path": "/shQLjXZ2nc2qg2huRnadWqzR7x5.jpg",
+"first_air_date": "2003-03-19",
+"name": "サクラ大戦 エコール・ド・巴里",
+"vote_average": 10,
+"vote_count": 1
+},
+{
+"adult": false,
+"backdrop_path": "/2XxTsm2DcFwVZaTjFimgSIJrgIM.jpg",
+"genre_ids": [
+16,
+10759,
+10762
+],
+"id": 27436,
+"origin_country": [
+"JP"
+],
+"original_language": "ja",
+"original_name": "星の王子さま　プチ・プランス",
+"overview": "Basada en la novela de Antoine de Saint-Exupéry, la serie mostraba las extensas aventuras de El Principito, el pájaro espacial Swifty, y Rose Girl.",
+"popularity": 55.893,
+"poster_path": "/kO30BSV6KJleNGapBYCXLieb5OC.jpg",
+"first_air_date": "1978-07-04",
+"name": "Las aventuras del Principito",
+"vote_average": 7.5,
+"vote_count": 11
+}
+],
+"total_pages": 565,
+"total_results": 11290
+},
+"watch/providers": {
+"results": {
+"AD": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=AD",
+"flatrate": [
+{
+"logo_path": "/gQbqEYd0C9uprYxEUqTM589qn8g.jpg",
+"provider_id": 1773,
+"provider_name": "SkyShowtime",
+"display_priority": 27
+}
+]
+},
+"AE": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=AE",
+"flatrate": [
+{
+"logo_path": "/kC6JTo59Gj6I4vJPyBAYGh0sKAE.jpg",
+"provider_id": 629,
+"provider_name": "OSN",
+"display_priority": 10
+}
+]
+},
+"AL": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=AL",
+"flatrate": [
+{
+"logo_path": "/gQbqEYd0C9uprYxEUqTM589qn8g.jpg",
+"provider_id": 1773,
+"provider_name": "SkyShowtime",
+"display_priority": 30
+}
+]
+},
+"AR": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=AR",
+"flatrate": [
+{
+"logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+"provider_id": 531,
+"provider_name": "Paramount Plus",
+"display_priority": 8
+},
+{
+"logo_path": "/tRNA2CRgA4XHvd7Mx9dH3sFtDVb.jpg",
+"provider_id": 339,
+"provider_name": "MovistarTV",
+"display_priority": 9
+},
+{
+"logo_path": "/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg",
+"provider_id": 1853,
+"provider_name": "Paramount Plus Apple TV Channel ",
+"display_priority": 57
+}
+]
+},
+"AT": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=AT",
+"flatrate": [
+{
+"logo_path": "/1UrT2H9x6DuQ9ytNhsSCUFtTUwS.jpg",
+"provider_id": 29,
+"provider_name": "Sky Go",
+"display_priority": 8
+},
+{
+"logo_path": "/67FAj8KvIiV5iZMJuPUdMrqMftw.jpg",
+"provider_id": 321,
+"provider_name": "Sky X",
+"display_priority": 20
+},
+{
+"logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+"provider_id": 531,
+"provider_name": "Paramount Plus",
+"display_priority": 56
+},
+{
+"logo_path": "/hExO4PtimLIYn3kBOrzsejNv7cT.jpg",
+"provider_id": 582,
+"provider_name": "Paramount+ Amazon Channel",
+"display_priority": 57
+},
+{
+"logo_path": "/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg",
+"provider_id": 1853,
+"provider_name": "Paramount Plus Apple TV Channel ",
+"display_priority": 61
+}
+],
+"buy": [
+{
+"logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
+"provider_id": 10,
+"provider_name": "Amazon Video",
+"display_priority": 3
+},
+{
+"logo_path": "/9lFSDdj10l7QAXyTZPDWuwkKJT3.jpg",
+"provider_id": 20,
+"provider_name": "maxdome Store",
+"display_priority": 14
+}
+],
+"free": [
+{
+"logo_path": "/dQeAar5H991VYporEjUspolDarG.jpg",
+"provider_id": 9,
+"provider_name": "Amazon Prime Video",
+"display_priority": 1
+}
+]
+},
+"AU": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=AU",
+"buy": [
+{
+"logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
+"provider_id": 2,
+"provider_name": "Apple TV",
+"display_priority": 10
+},
+{
+"logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
+"provider_id": 3,
+"provider_name": "Google Play Movies",
+"display_priority": 14
+},
+{
+"logo_path": "/n8STI6Hi6GCzLXHiibl9nIJdnaP.jpg",
+"provider_id": 429,
+"provider_name": "Telstra TV",
+"display_priority": 32
+},
+{
+"logo_path": "/9B7l9ZSos54kFrZbliVExt2z9C9.jpg",
+"provider_id": 436,
+"provider_name": "Fetch TV",
+"display_priority": 34
+}
+],
+"flatrate": [
+{
+"logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+"provider_id": 531,
+"provider_name": "Paramount Plus",
+"display_priority": 5
+},
+{
+"logo_path": "/hExO4PtimLIYn3kBOrzsejNv7cT.jpg",
+"provider_id": 582,
+"provider_name": "Paramount+ Amazon Channel",
+"display_priority": 6
+},
+{
+"logo_path": "/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg",
+"provider_id": 1853,
+"provider_name": "Paramount Plus Apple TV Channel ",
+"display_priority": 60
+}
+]
+},
+"BA": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=BA",
+"flatrate": [
+{
+"logo_path": "/gQbqEYd0C9uprYxEUqTM589qn8g.jpg",
+"provider_id": 1773,
+"provider_name": "SkyShowtime",
+"display_priority": 30
+}
+]
+},
+"BG": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=BG",
+"flatrate": [
+{
+"logo_path": "/gQbqEYd0C9uprYxEUqTM589qn8g.jpg",
+"provider_id": 1773,
+"provider_name": "SkyShowtime",
+"display_priority": 22
+}
+]
+},
+"BO": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=BO",
+"flatrate": [
+{
+"logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+"provider_id": 531,
+"provider_name": "Paramount Plus",
+"display_priority": 7
+},
+{
+"logo_path": "/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg",
+"provider_id": 1853,
+"provider_name": "Paramount Plus Apple TV Channel ",
+"display_priority": 35
+}
+]
+},
+"BR": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=BR",
+"flatrate": [
+{
+"logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+"provider_id": 531,
+"provider_name": "Paramount Plus",
+"display_priority": 6
+},
+{
+"logo_path": "/xzN54gRvHqG9CkJPYPeS6DmJokS.jpg",
+"provider_id": 484,
+"provider_name": "NOW",
+"display_priority": 29
+},
+{
+"logo_path": "/FFBHmEWA05CsqsKO272fNMWBvU.jpg",
+"provider_id": 574,
+"provider_name": "Oi Play",
+"display_priority": 43
+},
+{
+"logo_path": "/hExO4PtimLIYn3kBOrzsejNv7cT.jpg",
+"provider_id": 582,
+"provider_name": "Paramount+ Amazon Channel",
+"display_priority": 49
+},
+{
+"logo_path": "/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg",
+"provider_id": 1853,
+"provider_name": "Paramount Plus Apple TV Channel ",
+"display_priority": 68
+}
+]
+},
+"CA": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=CA",
+"flatrate": [
+{
+"logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+"provider_id": 531,
+"provider_name": "Paramount Plus",
+"display_priority": 10
+},
+{
+"logo_path": "/hExO4PtimLIYn3kBOrzsejNv7cT.jpg",
+"provider_id": 582,
+"provider_name": "Paramount+ Amazon Channel",
+"display_priority": 12
+},
+{
+"logo_path": "/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg",
+"provider_id": 1853,
+"provider_name": "Paramount Plus Apple TV Channel ",
+"display_priority": 118
+}
+],
+"buy": [
+{
+"logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
+"provider_id": 2,
+"provider_name": "Apple TV",
+"display_priority": 6
+}
+]
+},
+"CH": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=CH",
+"flatrate": [
+{
+"logo_path": "/ytApMa9fThUQUFTn696AeNBrB8f.jpg",
+"provider_id": 210,
+"provider_name": "Sky",
+"display_priority": 7
+},
+{
+"logo_path": "/eBXzkFEupZjKaIKY7zBUaSdCY8I.jpg",
+"provider_id": 381,
+"provider_name": "Canal+",
+"display_priority": 42
+},
+{
+"logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+"provider_id": 531,
+"provider_name": "Paramount Plus",
+"display_priority": 48
+},
+{
+"logo_path": "/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg",
+"provider_id": 1853,
+"provider_name": "Paramount Plus Apple TV Channel ",
+"display_priority": 50
+}
+]
+},
+"CL": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=CL",
+"flatrate": [
+{
+"logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+"provider_id": 531,
+"provider_name": "Paramount Plus",
+"display_priority": 6
+},
+{
+"logo_path": "/tRNA2CRgA4XHvd7Mx9dH3sFtDVb.jpg",
+"provider_id": 339,
+"provider_name": "MovistarTV",
+"display_priority": 9
+},
+{
+"logo_path": "/21M5CpiOYGOhHj2sVPXqwt6yeTO.jpg",
+"provider_id": 167,
+"provider_name": "Claro video",
+"display_priority": 10
+},
+{
+"logo_path": "/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg",
+"provider_id": 1853,
+"provider_name": "Paramount Plus Apple TV Channel ",
+"display_priority": 39
+}
+]
+},
+"CO": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=CO",
+"flatrate": [
+{
+"logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+"provider_id": 531,
+"provider_name": "Paramount Plus",
+"display_priority": 8
+},
+{
+"logo_path": "/21M5CpiOYGOhHj2sVPXqwt6yeTO.jpg",
+"provider_id": 167,
+"provider_name": "Claro video",
+"display_priority": 10
+},
+{
+"logo_path": "/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg",
+"provider_id": 1853,
+"provider_name": "Paramount Plus Apple TV Channel ",
+"display_priority": 39
+}
+]
+},
+"CR": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=CR",
+"flatrate": [
+{
+"logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+"provider_id": 531,
+"provider_name": "Paramount Plus",
+"display_priority": 7
+},
+{
+"logo_path": "/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg",
+"provider_id": 1853,
+"provider_name": "Paramount Plus Apple TV Channel ",
+"display_priority": 35
+}
+]
+},
+"CZ": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=CZ",
+"flatrate": [
+{
+"logo_path": "/gQbqEYd0C9uprYxEUqTM589qn8g.jpg",
+"provider_id": 1773,
+"provider_name": "SkyShowtime",
+"display_priority": 29
+}
+]
+},
+"DE": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=DE",
+"buy": [
+{
+"logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
+"provider_id": 2,
+"provider_name": "Apple TV",
+"display_priority": 4
+},
+{
+"logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
+"provider_id": 10,
+"provider_name": "Amazon Video",
+"display_priority": 8
+},
+{
+"logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
+"provider_id": 3,
+"provider_name": "Google Play Movies",
+"display_priority": 10
+},
+{
+"logo_path": "/9lFSDdj10l7QAXyTZPDWuwkKJT3.jpg",
+"provider_id": 20,
+"provider_name": "maxdome Store",
+"display_priority": 17
+},
+{
+"logo_path": "/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg",
+"provider_id": 68,
+"provider_name": "Microsoft Store",
+"display_priority": 31
+}
+],
+"free": [
+{
+"logo_path": "/dQeAar5H991VYporEjUspolDarG.jpg",
+"provider_id": 9,
+"provider_name": "Amazon Prime Video",
+"display_priority": 1
+}
+],
+"flatrate": [
+{
+"logo_path": "/9r5zFWuYnwjzO1JrNjSbLQwUc3P.jpg",
+"provider_id": 30,
+"provider_name": "WOW",
+"display_priority": 5
+},
+{
+"logo_path": "/1UrT2H9x6DuQ9ytNhsSCUFtTUwS.jpg",
+"provider_id": 29,
+"provider_name": "Sky Go",
+"display_priority": 7
+},
+{
+"logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+"provider_id": 531,
+"provider_name": "Paramount Plus",
+"display_priority": 9
+},
+{
+"logo_path": "/hExO4PtimLIYn3kBOrzsejNv7cT.jpg",
+"provider_id": 582,
+"provider_name": "Paramount+ Amazon Channel",
+"display_priority": 117
+},
+{
+"logo_path": "/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg",
+"provider_id": 1853,
+"provider_name": "Paramount Plus Apple TV Channel ",
+"display_priority": 125
+}
+]
+},
+"DK": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=DK",
+"flatrate": [
+{
+"logo_path": "/gQbqEYd0C9uprYxEUqTM589qn8g.jpg",
+"provider_id": 1773,
+"provider_name": "SkyShowtime",
+"display_priority": 38
+},
+{
+"logo_path": "/a6z85DKGuPOyTg03TlJ6ShzzFO6.jpg",
+"provider_id": 1961,
+"provider_name": "Allente",
+"display_priority": 43
+}
+]
+},
+"DO": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=DO",
+"flatrate": [
+{
+"logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+"provider_id": 531,
+"provider_name": "Paramount Plus",
+"display_priority": 31
+},
+{
+"logo_path": "/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg",
+"provider_id": 1853,
+"provider_name": "Paramount Plus Apple TV Channel ",
+"display_priority": 35
+}
+]
+},
+"EC": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=EC",
+"flatrate": [
+{
+"logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+"provider_id": 531,
+"provider_name": "Paramount Plus",
+"display_priority": 3
+},
+{
+"logo_path": "/tRNA2CRgA4XHvd7Mx9dH3sFtDVb.jpg",
+"provider_id": 339,
+"provider_name": "MovistarTV",
+"display_priority": 4
+},
+{
+"logo_path": "/21M5CpiOYGOhHj2sVPXqwt6yeTO.jpg",
+"provider_id": 167,
+"provider_name": "Claro video",
+"display_priority": 9
+},
+{
+"logo_path": "/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg",
+"provider_id": 1853,
+"provider_name": "Paramount Plus Apple TV Channel ",
+"display_priority": 37
+}
+]
+},
+"EE": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=EE",
+"flatrate": [
+{
+"logo_path": "/1y6ds7KDN5Q33Jb0ZxnroEJ58Gd.jpg",
+"provider_id": 373,
+"provider_name": "Go3",
+"display_priority": 9
+}
+]
+},
+"EG": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=EG",
+"flatrate": [
+{
+"logo_path": "/kC6JTo59Gj6I4vJPyBAYGh0sKAE.jpg",
+"provider_id": 629,
+"provider_name": "OSN",
+"display_priority": 27
+}
+]
+},
+"ES": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=ES",
+"flatrate": [
+{
+"logo_path": "/7K6rVbpWXB6ByDI0PRzGGRXRBSY.jpg",
+"provider_id": 149,
+"provider_name": "Movistar Plus",
+"display_priority": 10
+},
+{
+"logo_path": "/gQbqEYd0C9uprYxEUqTM589qn8g.jpg",
+"provider_id": 1773,
+"provider_name": "SkyShowtime",
+"display_priority": 71
+}
+]
+},
+"FI": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=FI",
+"flatrate": [
+{
+"logo_path": "/c7SqVo4DFrbK3RwhGbxvQ9SRco2.jpg",
+"provider_id": 338,
+"provider_name": "Ruutu",
+"display_priority": 8
+},
+{
+"logo_path": "/gQbqEYd0C9uprYxEUqTM589qn8g.jpg",
+"provider_id": 1773,
+"provider_name": "SkyShowtime",
+"display_priority": 39
+}
+]
+},
+"FR": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=FR",
+"flatrate": [
+{
+"logo_path": "/eBXzkFEupZjKaIKY7zBUaSdCY8I.jpg",
+"provider_id": 381,
+"provider_name": "Canal+",
+"display_priority": 6
+},
+{
+"logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+"provider_id": 531,
+"provider_name": "Paramount Plus",
+"display_priority": 84
+},
+{
+"logo_path": "/hExO4PtimLIYn3kBOrzsejNv7cT.jpg",
+"provider_id": 582,
+"provider_name": "Paramount+ Amazon Channel",
+"display_priority": 85
+},
+{
+"logo_path": "/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg",
+"provider_id": 1853,
+"provider_name": "Paramount Plus Apple TV Channel ",
+"display_priority": 91
+},
+{
+"logo_path": "/nBrPDnOWhullZrtcYM0qWpm4xNH.jpg",
+"provider_id": 345,
+"provider_name": "Canal+ Séries",
+"display_priority": 110
+}
+],
+"buy": [
+{
+"logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
+"provider_id": 2,
+"provider_name": "Apple TV",
+"display_priority": 4
+},
+{
+"logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
+"provider_id": 3,
+"provider_name": "Google Play Movies",
+"display_priority": 8
+}
+]
+},
+"GB": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=GB",
+"free": [
+{
+"logo_path": "/dQeAar5H991VYporEjUspolDarG.jpg",
+"provider_id": 9,
+"provider_name": "Amazon Prime Video",
+"display_priority": 2
+}
+],
+"flatrate": [
+{
+"logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+"provider_id": 531,
+"provider_name": "Paramount Plus",
+"display_priority": 7
+},
+{
+"logo_path": "/hExO4PtimLIYn3kBOrzsejNv7cT.jpg",
+"provider_id": 582,
+"provider_name": "Paramount+ Amazon Channel",
+"display_priority": 90
+},
+{
+"logo_path": "/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg",
+"provider_id": 1853,
+"provider_name": "Paramount Plus Apple TV Channel ",
+"display_priority": 115
+}
+],
+"buy": [
+{
+"logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
+"provider_id": 2,
+"provider_name": "Apple TV",
+"display_priority": 4
+},
+{
+"logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
+"provider_id": 10,
+"provider_name": "Amazon Video",
+"display_priority": 6
+},
+{
+"logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
+"provider_id": 3,
+"provider_name": "Google Play Movies",
+"display_priority": 13
+},
+{
+"logo_path": "/6AKbY2ayaEuH4zKg2prqoVQ9iaY.jpg",
+"provider_id": 130,
+"provider_name": "Sky Store",
+"display_priority": 15
+}
+]
+},
+"GG": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=GG",
+"free": [
+{
+"logo_path": "/dQeAar5H991VYporEjUspolDarG.jpg",
+"provider_id": 119,
+"provider_name": "Amazon Prime Video",
+"display_priority": 1
+}
+]
+},
+"GT": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=GT",
+"flatrate": [
+{
+"logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+"provider_id": 531,
+"provider_name": "Paramount Plus",
+"display_priority": 6
+},
+{
+"logo_path": "/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg",
+"provider_id": 1853,
+"provider_name": "Paramount Plus Apple TV Channel ",
+"display_priority": 35
+}
+]
+},
+"HN": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=HN",
+"flatrate": [
+{
+"logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+"provider_id": 531,
+"provider_name": "Paramount Plus",
+"display_priority": 8
+},
+{
+"logo_path": "/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg",
+"provider_id": 1853,
+"provider_name": "Paramount Plus Apple TV Channel ",
+"display_priority": 35
+}
+]
+},
+"HR": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=HR",
+"flatrate": [
+{
+"logo_path": "/gQbqEYd0C9uprYxEUqTM589qn8g.jpg",
+"provider_id": 1773,
+"provider_name": "SkyShowtime",
+"display_priority": 39
+}
+]
+},
+"HU": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=HU",
+"flatrate": [
+{
+"logo_path": "/gQbqEYd0C9uprYxEUqTM589qn8g.jpg",
+"provider_id": 1773,
+"provider_name": "SkyShowtime",
+"display_priority": 28
+}
+]
+},
+"IE": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=IE",
+"flatrate": [
+{
+"logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+"provider_id": 531,
+"provider_name": "Paramount Plus",
+"display_priority": 6
+},
+{
+"logo_path": "/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg",
+"provider_id": 1853,
+"provider_name": "Paramount Plus Apple TV Channel ",
+"display_priority": 45
+}
+],
+"buy": [
+{
+"logo_path": "/6AKbY2ayaEuH4zKg2prqoVQ9iaY.jpg",
+"provider_id": 130,
+"provider_name": "Sky Store",
+"display_priority": 9
+}
+]
+},
+"IN": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=IN",
+"flatrate": [
+{
+"logo_path": "/1uQBlkLRe04k58L8q1IrYOYvGfk.jpg",
+"provider_id": 121,
+"provider_name": "Voot",
+"display_priority": 6
+},
+{
+"logo_path": "/AsPkPqjTut1gV4OhWW3hChwTOXE.jpg",
+"provider_id": 220,
+"provider_name": "Jio Cinema",
+"display_priority": 7
+}
+]
+},
+"IQ": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=IQ",
+"flatrate": [
+{
+"logo_path": "/kC6JTo59Gj6I4vJPyBAYGh0sKAE.jpg",
+"provider_id": 629,
+"provider_name": "OSN",
+"display_priority": 12
+}
+]
+},
+"IT": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=IT",
+"flatrate": [
+{
+"logo_path": "/1UrT2H9x6DuQ9ytNhsSCUFtTUwS.jpg",
+"provider_id": 29,
+"provider_name": "Sky Go",
+"display_priority": 8
+},
+{
+"logo_path": "/g0E9h3JAeIwmdvxlT73jiEuxdNj.jpg",
+"provider_id": 39,
+"provider_name": "Now TV",
+"display_priority": 9
+},
+{
+"logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+"provider_id": 531,
+"provider_name": "Paramount Plus",
+"display_priority": 59
+},
+{
+"logo_path": "/hExO4PtimLIYn3kBOrzsejNv7cT.jpg",
+"provider_id": 582,
+"provider_name": "Paramount+ Amazon Channel",
+"display_priority": 60
+},
+{
+"logo_path": "/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg",
+"provider_id": 1853,
+"provider_name": "Paramount Plus Apple TV Channel ",
+"display_priority": 74
+}
+]
+},
+"JP": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=JP",
+"buy": [
+{
+"logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
+"provider_id": 10,
+"provider_name": "Amazon Video",
+"display_priority": 6
+},
+{
+"logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
+"provider_id": 3,
+"provider_name": "Google Play Movies",
+"display_priority": 9
+}
+],
+"flatrate": [
+{
+"logo_path": "/a5T7vNaGvoeckYO6rQkHolvyYf4.jpg",
+"provider_id": 84,
+"provider_name": "U-NEXT",
+"display_priority": 4
+}
+]
+},
+"LT": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=LT",
+"flatrate": [
+{
+"logo_path": "/1y6ds7KDN5Q33Jb0ZxnroEJ58Gd.jpg",
+"provider_id": 373,
+"provider_name": "Go3",
+"display_priority": 9
+}
+]
+},
+"LV": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=LV",
+"flatrate": [
+{
+"logo_path": "/1y6ds7KDN5Q33Jb0ZxnroEJ58Gd.jpg",
+"provider_id": 373,
+"provider_name": "Go3",
+"display_priority": 9
+}
+]
+},
+"MK": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=MK",
+"flatrate": [
+{
+"logo_path": "/gQbqEYd0C9uprYxEUqTM589qn8g.jpg",
+"provider_id": 1773,
+"provider_name": "SkyShowtime",
+"display_priority": 28
+}
+]
+},
+"MX": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=MX",
+"flatrate": [
+{
+"logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+"provider_id": 531,
+"provider_name": "Paramount Plus",
+"display_priority": 6
+},
+{
+"logo_path": "/21M5CpiOYGOhHj2sVPXqwt6yeTO.jpg",
+"provider_id": 167,
+"provider_name": "Claro video",
+"display_priority": 8
+},
+{
+"logo_path": "/hExO4PtimLIYn3kBOrzsejNv7cT.jpg",
+"provider_id": 582,
+"provider_name": "Paramount+ Amazon Channel",
+"display_priority": 45
+},
+{
+"logo_path": "/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg",
+"provider_id": 1853,
+"provider_name": "Paramount Plus Apple TV Channel ",
+"display_priority": 67
+}
+]
+},
+"NI": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=NI",
+"flatrate": [
+{
+"logo_path": "/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg",
+"provider_id": 1853,
+"provider_name": "Paramount Plus Apple TV Channel ",
+"display_priority": 11
+},
+{
+"logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+"provider_id": 531,
+"provider_name": "Paramount Plus",
+"display_priority": 14
+}
+]
+},
+"NL": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=NL",
+"flatrate": [
+{
+"logo_path": "/gQbqEYd0C9uprYxEUqTM589qn8g.jpg",
+"provider_id": 1773,
+"provider_name": "SkyShowtime",
+"display_priority": 50
+}
+]
+},
+"NO": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=NO",
+"flatrate": [
+{
+"logo_path": "/3ZigBD8WTEPcEHAvMWiJGUsv5u4.jpg",
+"provider_id": 578,
+"provider_name": "Strim",
+"display_priority": 31
+},
+{
+"logo_path": "/gQbqEYd0C9uprYxEUqTM589qn8g.jpg",
+"provider_id": 1773,
+"provider_name": "SkyShowtime",
+"display_priority": 39
+}
+]
+},
+"NZ": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=NZ",
+"flatrate": [
+{
+"logo_path": "/wbqJss5NNebssp5RBkAdxIHecv2.jpg",
+"provider_id": 395,
+"provider_name": "TVNZ",
+"display_priority": 13
+}
+]
+},
+"PA": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=PA",
+"flatrate": [
+{
+"logo_path": "/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg",
+"provider_id": 1853,
+"provider_name": "Paramount Plus Apple TV Channel ",
+"display_priority": 37
+},
+{
+"logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+"provider_id": 531,
+"provider_name": "Paramount Plus",
+"display_priority": 38
+}
+]
+},
+"PE": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=PE",
+"flatrate": [
+{
+"logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+"provider_id": 531,
+"provider_name": "Paramount Plus",
+"display_priority": 6
+},
+{
+"logo_path": "/21M5CpiOYGOhHj2sVPXqwt6yeTO.jpg",
+"provider_id": 167,
+"provider_name": "Claro video",
+"display_priority": 10
+},
+{
+"logo_path": "/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg",
+"provider_id": 1853,
+"provider_name": "Paramount Plus Apple TV Channel ",
+"display_priority": 39
+}
+]
+},
+"PL": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=PL",
+"flatrate": [
+{
+"logo_path": "/gQbqEYd0C9uprYxEUqTM589qn8g.jpg",
+"provider_id": 1773,
+"provider_name": "SkyShowtime",
+"display_priority": 33
+}
+]
+},
+"PS": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=PS",
+"flatrate": [
+{
+"logo_path": "/kC6JTo59Gj6I4vJPyBAYGh0sKAE.jpg",
+"provider_id": 629,
+"provider_name": "OSN",
+"display_priority": 12
+}
+]
+},
+"PT": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=PT",
+"flatrate": [
+{
+"logo_path": "/gQbqEYd0C9uprYxEUqTM589qn8g.jpg",
+"provider_id": 1773,
+"provider_name": "SkyShowtime",
+"display_priority": 33
+}
+]
+},
+"PY": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=PY",
+"flatrate": [
+{
+"logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+"provider_id": 531,
+"provider_name": "Paramount Plus",
+"display_priority": 4
+},
+{
+"logo_path": "/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg",
+"provider_id": 1853,
+"provider_name": "Paramount Plus Apple TV Channel ",
+"display_priority": 34
+}
+]
+},
+"RO": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=RO",
+"flatrate": [
+{
+"logo_path": "/gQbqEYd0C9uprYxEUqTM589qn8g.jpg",
+"provider_id": 1773,
+"provider_name": "SkyShowtime",
+"display_priority": 23
+}
+]
+},
+"RS": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=RS",
+"flatrate": [
+{
+"logo_path": "/gQbqEYd0C9uprYxEUqTM589qn8g.jpg",
+"provider_id": 1773,
+"provider_name": "SkyShowtime",
+"display_priority": 31
+}
+]
+},
+"SA": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=SA",
+"flatrate": [
+{
+"logo_path": "/kC6JTo59Gj6I4vJPyBAYGh0sKAE.jpg",
+"provider_id": 629,
+"provider_name": "OSN",
+"display_priority": 26
+}
+]
+},
+"SE": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=SE",
+"flatrate": [
+{
+"logo_path": "/gQbqEYd0C9uprYxEUqTM589qn8g.jpg",
+"provider_id": 1773,
+"provider_name": "SkyShowtime",
+"display_priority": 42
+}
+]
+},
+"SI": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=SI",
+"flatrate": [
+{
+"logo_path": "/gQbqEYd0C9uprYxEUqTM589qn8g.jpg",
+"provider_id": 1773,
+"provider_name": "SkyShowtime",
+"display_priority": 33
+}
+]
+},
+"SK": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=SK",
+"flatrate": [
+{
+"logo_path": "/gQbqEYd0C9uprYxEUqTM589qn8g.jpg",
+"provider_id": 1773,
+"provider_name": "SkyShowtime",
+"display_priority": 41
+}
+]
+},
+"SV": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=SV",
+"flatrate": [
+{
+"logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+"provider_id": 531,
+"provider_name": "Paramount Plus",
+"display_priority": 31
+},
+{
+"logo_path": "/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg",
+"provider_id": 1853,
+"provider_name": "Paramount Plus Apple TV Channel ",
+"display_priority": 36
+}
+]
+},
+"TD": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=TD",
+"flatrate": [
+{
+"logo_path": "/kC6JTo59Gj6I4vJPyBAYGh0sKAE.jpg",
+"provider_id": 629,
+"provider_name": "OSN",
+"display_priority": 1
+}
+]
+},
+"US": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=US",
+"free": [
+{
+"logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+"provider_id": 531,
+"provider_name": "Paramount Plus",
+"display_priority": 18
+},
+{
+"logo_path": "/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg",
+"provider_id": 1853,
+"provider_name": "Paramount Plus Apple TV Channel ",
+"display_priority": 20
+}
+],
+"buy": [
+{
+"logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
+"provider_id": 2,
+"provider_name": "Apple TV",
+"display_priority": 4
+},
+{
+"logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
+"provider_id": 10,
+"provider_name": "Amazon Video",
+"display_priority": 15
+},
+{
+"logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
+"provider_id": 3,
+"provider_name": "Google Play Movies",
+"display_priority": 16
+},
+{
+"logo_path": "/nVzxU8EPk0aXqQkBZniVA2kat1I.jpg",
+"provider_id": 7,
+"provider_name": "Vudu",
+"display_priority": 42
+},
+{
+"logo_path": "/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg",
+"provider_id": 68,
+"provider_name": "Microsoft Store",
+"display_priority": 53
+}
+],
+"flatrate": [
+{
+"logo_path": "/rugttVJKzDAwVbM99gAV6i3g59Q.jpg",
+"provider_id": 257,
+"provider_name": "fuboTV",
+"display_priority": 7
+},
+{
+"logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+"provider_id": 531,
+"provider_name": "Paramount Plus",
+"display_priority": 18
+},
+{
+"logo_path": "/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg",
+"provider_id": 1853,
+"provider_name": "Paramount Plus Apple TV Channel ",
+"display_priority": 20
+},
+{
+"logo_path": "/hExO4PtimLIYn3kBOrzsejNv7cT.jpg",
+"provider_id": 582,
+"provider_name": "Paramount+ Amazon Channel",
+"display_priority": 24
+},
+{
+"logo_path": "/ywIoxSjoYJGUIbR6BfxUiCHdPi3.jpg",
+"provider_id": 633,
+"provider_name": "Paramount+ Roku Premium Channel",
+"display_priority": 31
+},
+{
+"logo_path": "/kOI9M2PeWKFbfQ7m9VvTU0OdIe1.jpg",
+"provider_id": 37,
+"provider_name": "Showtime",
+"display_priority": 46
+},
+{
+"logo_path": "/aAb9CUHjFe9Y3O57qnrJH0KOF1B.jpg",
+"provider_id": 486,
+"provider_name": "Spectrum On Demand",
+"display_priority": 161
+},
+{
+"logo_path": "/cm1tVzivRWvZjcRSe5dwNqtw26E.jpg",
+"provider_id": 675,
+"provider_name": "Showtime Apple TV Channel",
+"display_priority": 278
+}
+]
+},
+"UY": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=UY",
+"flatrate": [
+{
+"logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+"provider_id": 531,
+"provider_name": "Paramount Plus",
+"display_priority": 3
+}
+]
+},
+"VE": {
+"link": "https://www.themoviedb.org/tv/52814-halo/watch?locale=VE",
+"flatrate": [
+{
+"logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+"provider_id": 531,
+"provider_name": "Paramount Plus",
+"display_priority": 7
+},
+{
+"logo_path": "/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg",
+"provider_id": 1853,
+"provider_name": "Paramount Plus Apple TV Channel ",
+"display_priority": 34
+}
+]
+}
+}
+}
+}

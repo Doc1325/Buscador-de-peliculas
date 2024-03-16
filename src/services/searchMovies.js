@@ -1,84 +1,137 @@
-// import data from '../mocks/mock2.json'
-// const API_KEY = 'fc04708d'
-export async function searchMovies ({ search }) {
-  if (search !== '') {
+const API = import.meta.env.VITE_TMDB_API_TOKEN
+const options = {
+  method: 'GET',
+  headers: {
+    accept: 'application/json',
+    Authorization: `Bearer ${API}`
+  }
+}
+// navigator.language
+const END_POINTS = {
+  search: (search) => `https://api.themoviedb.org/3/search/multi&query=${search}&include_adult=false&language=do-es&page=1`,
+  info: (query, type) => `https://api.themoviedb.org/3/${type}/${query}?language=es-DO&append_to_response=videos,similar,watch/providers`, // respuestas extra se colocan con  coma
+  general: 'https://api.themoviedb.org/3/trending/all/day?&language=es-DO&append_to_response=images',
+  movies: 'https://api.themoviedb.org/3/trending/movie/day?&language=es-DO&append_to_response=images',
+  tv: 'https://api.themoviedb.org/3/trending/tv/day?&language=es-DO&append_to_response=images',
+  images: (query, type) => `https://api.themoviedb.org/3/${type}/${query}/images`
+}
+
+export async function searchMovies ({ search, type }) {
+// Carga el contenido del archivo .env
+  let response
+  if (search !== '' && search !== undefined) {
     try {
-      const url = `https://moviesdatabase.p.rapidapi.com/titles/search/title/${search}?info=mini_info&endYear=2023&startYear=1&exact=false&limit=10&titleType=movie`
-      const options = {
-        method: 'GET',
-        headers: {
-          'X-RapidAPI-Key': 'f0e954e928msh0bd1dc6eceb7d11p19e4a5jsn5e5612867c7a',
-          'X-RapidAPI-Host': 'moviesdatabase.p.rapidapi.com'
-        }
-      }
-
-      const response = await fetch(url, options)
-      const data = await response.json()
-      const movies = data.results
-      return movies?.map(movie => ({
-        id: movie?.id ?? '',
-        title: movie.originalTitleText?.text ?? '',
-        year: movie.releaseYear?.year ?? '???',
-        image: movie.primaryImage?.url ?? 'https://www.prokerala.com/movies/assets/img/no-poster-available.jpg',
-        searchParameter: movie.id
-
-      }))
+      response = await fetch(END_POINTS.search(search), options)
     } catch (e) {
       throw new Error('Error searching movies' + ' ' + e)
     }
   } else {
-    try {
-      const url = 'https://moviesdatabase.p.rapidapi.com/titles?info=mini_info&list=top_boxoffice_last_weekend_10'
-      const options = {
-        method: 'GET',
-        headers: {
-          'X-RapidAPI-Key': 'f0e954e928msh0bd1dc6eceb7d11p19e4a5jsn5e5612867c7a',
-          'X-RapidAPI-Host': 'moviesdatabase.p.rapidapi.com'
-        }
-      }
-      const response = await fetch(url, options)
-      const data = await response.json()
-      const movies = data.results
-      return movies?.map(movie => ({
-        id: movie?.id ?? '',
-        title: movie.originalTitleText?.text ?? '',
-        year: movie.releaseYear?.year ?? '???',
-        image: movie.primaryImage?.url ?? 'https://www.prokerala.com/movies/assets/img/no-poster-available.jpg',
-        searchParameter: movie.id
-
-      }))
-    } catch (e) {
-      throw new Error('Error searching movies' + ' ' + e)
-    }
+    if (type === 'tv') response = await fetch(END_POINTS.tv, options)
+    else if (type === 'movie') response = await fetch(END_POINTS.movies, options)
+    else response = await fetch(END_POINTS.general, options)
   }
+
+  const data = await response.json()
+  const movies = await data.results
+  return mapMovies(movies)
 }
 
 export async function getMovieInfo (searchParameter) {
-  const url = `https://moviesdatabase.p.rapidapi.com/titles/${searchParameter}?info=base_info`
-  const options = {
-    method: 'GET',
-    headers: {
-      'X-RapidAPI-Key': 'f0e954e928msh0bd1dc6eceb7d11p19e4a5jsn5e5612867c7a',
-      'X-RapidAPI-Host': 'moviesdatabase.p.rapidapi.com'
-    }
-  }
-  const response = await fetch(url, options)
+  const response = await fetch(END_POINTS.info(searchParameter.query, searchParameter.type), options)
   const data = await response.json()
-  const movieInfo = data
-
+  const movieInfo = await data
   return {
-    title: movieInfo.results.titleText.text,
-    info: movieInfo.results.plot.plotText.plainText,
-    image: movieInfo.results.primaryImage.url,
-    ranking: movieInfo.results.ratingsSummary.aggregateRating,
-    genres: movieInfo.results.genres.genres,
-    releaseDate: () => {
-      const day = movieInfo.results.releaseDate.day
-      const month = movieInfo.results.releaseDate.month
-      const year = movieInfo.results.releaseDate.year
-      return [day, month, year].join('-')
-    },
-    duration: movieInfo.results.runtime.displayableProperty.value.plainText
+    title: movieInfo?.title ?? movieInfo?.name,
+    info: movieInfo?.overview,
+    image: `https://image.tmdb.org/t/p/w500/${movieInfo.poster_path}` ?? `https://image.tmdb.org/t/p/w500/${movieInfo.poster_path}`, // TODO: ADD DEFAULT MOVIE POSTER
+    ranking: Number(movieInfo.vote_average.toFixed(1)),
+    genres: movieInfo.genres[0].name,
+    releaseDate: movieInfo.release_date ?? movieInfo.first_air_date,
+    duration: timeConvert(movieInfo.runtime ?? movieInfo.episode_run_time),
+    clip: movieInfo?.videos?.results[0]?.key ?? null,
+    similar: mapMovies(movieInfo.similar.results.slice(0, 8)),
+    providers: mapProviders(movieInfo['watch/providers'].results.DO)
 
   }
+}
+
+function mapProviders (providers) {
+  const flatrateProviders = providers?.flatrate
+  const freeProviders = providers?.free
+  const buyProviders = providers?.buy
+
+  const flatrateProviderList = flatrateProviders
+    ? flatrateProviders.map(provider => {
+      return {
+        providerId: provider.provider_id,
+        providerName: provider.provider_name,
+        providerImg: `https://image.tmdb.org/t/p/w500/${provider.logo_path}`
+      }
+    })
+    : []
+
+  const freeProviderList = freeProviders
+    ? freeProviders.map(provider => {
+      return {
+        providerId: provider.provider_id,
+        providerName: provider.provider_name,
+        providerImg: `https://image.tmdb.org/t/p/w500/${provider.logo_path}`
+      }
+    })
+    : []
+  const buyProviderList = buyProviders
+    ? buyProviders.map(provider => {
+      return {
+        providerId: provider.provider_id,
+        providerName: provider.provider_name,
+        providerImg: `https://image.tmdb.org/t/p/w500/${provider.logo_path}`
+      }
+    })
+    : []
+  const allProviders = new Set([...flatrateProviderList, ...freeProviderList, ...buyProviderList])
+  const mappedProviders = [...allProviders]
+  return mappedProviders.length !== 0 ? mappedProviders : null
+}
+
+function mapMovies (movies) {
+  return movies?.map(movie => ({
+    id: movie?.id ?? '',
+    title: movie?.title ?? movie?.name ?? '',
+    year: movie?.release_date?.substring(0, 4) ?? movie.first_air_date?.substring(0, 4),
+    image: `https://image.tmdb.org/t/p/w500/${movie.poster_path}` ?? 'https://www.prokerala.com/movies/assets/img/no-poster-available.jpg',
+    searchParameter: movie?.id,
+    type: movie?.media_type
+  }))
+}
+
+// export async function getGeneral () {
+//   const response = await fetch(END_POINTS.general)
+//   const data = await response.json()
+//   const movies = data.results
+//   return movies?.map(movie => ({
+//     id: movie?.id ?? '',
+//     title: movie?.title ?? movie?.name,
+//     year: movie?.release_date ?? '???',
+//     image: `https://image.tmdb.org/t/p/w500/${movie.poster_path}` ?? 'https://www.prokerala.com/movies/assets/img/no-poster-available.jpg',
+//     searchParameter: movie?.id,
+//     type: movie?.media_type
+//   }))
+// }
+
+function timeConvert (n) {
+  const num = n
+  const hours = (num / 60)
+  const rhours = Math.floor(hours)
+  const minutes = (hours - rhours) * 60
+  const rminutes = Math.round(minutes)
+  return rhours > 0 ? rhours + 'h' + ' ' + rminutes + 'm' : rminutes + 'm'
+}
+
+export async function getImage (media) {
+  const response = await fetch(END_POINTS.images(media.query, media.type), options)
+  const data = await response.json()
+  const background = await data?.backdrops[0].file_path ?? ''
+  const logo = await data?.logos[0].file_path ?? ''
+
+  return { background: `https://image.tmdb.org/t/p/original/${background}`, logo: `https://image.tmdb.org/t/p/original/${logo}` }
 }

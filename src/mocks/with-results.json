@@ -1,76 +1,330 @@
 {
-    "Search": [
-    {
-    "Title": "The Avengers",
-    "Year": "2012",
-    "imdbID": "tt0848228",
-    "Type": "movie",
-    "Poster": "https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
-    },
-    {
-    "Title": "Avengers: Endgame",
-    "Year": "2019",
-    "imdbID": "tt4154796",
-    "Type": "movie",
-    "Poster": "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg"
-    },
-    {
-    "Title": "Avengers: Infinity War",
-    "Year": "2018",
-    "imdbID": "tt4154756",
-    "Type": "movie",
-    "Poster": "https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_SX300.jpg"
-    },
-    {
-    "Title": "Avengers: Age of Ultron",
-    "Year": "2015",
-    "imdbID": "tt2395427",
-    "Type": "movie",
-    "Poster": "https://m.media-amazon.com/images/M/MV5BMTM4OGJmNWMtOTM4Ni00NTE3LTg3MDItZmQxYjc4N2JhNmUxXkEyXkFqcGdeQXVyNTgzMDMzMTg@._V1_SX300.jpg"
-    },
-    {
-    "Title": "The Avengers",
-    "Year": "1998",
-    "imdbID": "tt0118661",
-    "Type": "movie",
-    "Poster": "https://m.media-amazon.com/images/M/MV5BYWE1NTdjOWQtYTQ2Ny00Nzc5LWExYzMtNmRlOThmOTE2N2I4XkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SX300.jpg"
-    },
-    {
-    "Title": "The Avengers: Earth's Mightiest Heroes",
-    "Year": "2010–2012",
-    "imdbID": "tt1626038",
-    "Type": "series",
-    "Poster": "https://m.media-amazon.com/images/M/MV5BYzA4ZjVhYzctZmI0NC00ZmIxLWFmYTgtOGIxMDYxODhmMGQ2XkEyXkFqcGdeQXVyNjExODE1MDc@._V1_SX300.jpg"
-    },
-    {
-    "Title": "Ultimate Avengers: The Movie",
-    "Year": "2006",
-    "imdbID": "tt0491703",
-    "Type": "movie",
-    "Poster": "https://m.media-amazon.com/images/M/MV5BMTYyMjk0NTMwMl5BMl5BanBnXkFtZTgwNzY0NjAwNzE@._V1_SX300.jpg"
-    },
-    {
-    "Title": "Ultimate Avengers II",
-    "Year": "2006",
-    "imdbID": "tt0803093",
-    "Type": "movie",
-    "Poster": "https://m.media-amazon.com/images/M/MV5BZjI3MTI5ZTYtZmNmNy00OGZmLTlhNWMtNjZiYmYzNDhlOGRkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
-    },
-    {
-    "Title": "The Avengers",
-    "Year": "1961–1969",
-    "imdbID": "tt0054518",
-    "Type": "series",
-    "Poster": "https://m.media-amazon.com/images/M/MV5BZWQwZTdjMDUtNTY1YS00MDI0LWFkNjYtZDA4MDdmZjdlMDRlXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SX300.jpg"
-    },
-    {
-    "Title": "Avengers Assemble",
-    "Year": "2012–2019",
-    "imdbID": "tt2455546",
-    "Type": "series",
-    "Poster": "https://m.media-amazon.com/images/M/MV5BMTY0NTUyMDQwOV5BMl5BanBnXkFtZTgwNjAwMTA0MDE@._V1_SX300.jpg"
-    }
+    "page": 1,
+    "results": [
+        {
+            "adult": false,
+            "backdrop_path": "/zV5yIAhpXe51VSNhnjV8vykAdoc.jpg",
+            "id": 495379,
+            "title": "Dasdhunga",
+            "original_language": "ne",
+            "original_title": "Dasdhunga",
+            "overview": "Based on true events of the mysterious death of CPN-UML leader Madan Bhandari in Dashdhunga, Nepal.",
+            "poster_path": "/r8bXVxZvZm1uE5zSTtELgXjPlYI.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                18,
+                36
+            ],
+            "popularity": 0.6,
+            "release_date": "2010-09-03",
+            "video": false,
+            "vote_average": 5.7,
+            "vote_count": 3
+        },
+        {
+            "adult": false,
+            "id": 1194094,
+            "name": "İncinur Daşdemir",
+            "original_name": "İncinur Daşdemir",
+            "media_type": "person",
+            "popularity": 5.214,
+            "gender": 1,
+            "known_for_department": "Acting",
+            "profile_path": "/xc62pk6USfuOpuMuVWlaN3spTpe.jpg",
+            "known_for": [
+                {
+                    "adult": false,
+                    "backdrop_path": "/jN2QrsyGfurBrtGGCNTBQPNZ6wJ.jpg",
+                    "id": 133666,
+                    "title": "Dabbe 2",
+                    "original_language": "tr",
+                    "original_title": "Dabbe 2",
+                    "overview": "Internet network has spread into every home Dabbe, under the command of electromagnetic systems all over the world with demons and shadow assets were seized.",
+                    "poster_path": "/xhmg4bpRLlSZ1oNODCtWPZkCi85.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        27,
+                        9648
+                    ],
+                    "popularity": 2.527,
+                    "release_date": "2009-12-24",
+                    "video": false,
+                    "vote_average": 2.0,
+                    "vote_count": 22
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/5yW2BjqjTLTvJqQ7dRJjiDu9oEL.jpg",
+                    "id": 1026822,
+                    "title": "Cici",
+                    "original_language": "tr",
+                    "original_title": "Cici",
+                    "overview": "A family migrates to the city after a tragic loss. When they reunite in their hometown 30 years later, buried emotions and painful secrets resurface.",
+                    "poster_path": "/hzB4hGHkW4NGnjhqTSyTj9AbgGO.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        18
+                    ],
+                    "popularity": 2.918,
+                    "release_date": "2022-10-27",
+                    "video": false,
+                    "vote_average": 6.1,
+                    "vote_count": 30
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/xA0DMLjNmTlMsj0oNIAFuS1GnL0.jpg",
+                    "id": 476889,
+                    "title": "Blind in Love",
+                    "original_language": "tr",
+                    "original_title": "Aşkın Gören Gözlere İhtiyacı Yok",
+                    "overview": "",
+                    "poster_path": "/w2aDDfSBBp5zMYdI839vGnrhud5.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        53,
+                        18
+                    ],
+                    "popularity": 1.754,
+                    "release_date": "2017-09-28",
+                    "video": false,
+                    "vote_average": 5.7,
+                    "vote_count": 18
+                }
+            ]
+        },
+        {
+            "adult": false,
+            "id": 2726564,
+            "name": "Ritu Dasdutta",
+            "original_name": "Ritu Dasdutta",
+            "media_type": "person",
+            "popularity": 0.6,
+            "gender": 0,
+            "known_for_department": "Directing",
+            "profile_path": null,
+            "known_for": [
+                {
+                    "adult": false,
+                    "backdrop_path": null,
+                    "id": 728783,
+                    "title": "Krantodorshi",
+                    "original_language": "en",
+                    "original_title": "Krantodorshi",
+                    "overview": "A publisher, a poet and an author caught in a age old dilemma. To pay or Not to Pay!",
+                    "poster_path": "/dLdRRGKdlJZl5Rzf4Zchndm9jCP.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [],
+                    "popularity": 0.613,
+                    "release_date": "2020-07-26",
+                    "video": false,
+                    "vote_average": 0.0,
+                    "vote_count": 0
+                }
+            ]
+        },
+        {
+            "adult": false,
+            "id": 3581159,
+            "name": "İbrahim Daşdelen",
+            "original_name": "İbrahim Daşdelen",
+            "media_type": "person",
+            "popularity": 0.6,
+            "gender": 0,
+            "known_for_department": "Acting",
+            "profile_path": null,
+            "known_for": [
+                {
+                    "adult": false,
+                    "backdrop_path": "/fK0ObSQf3BEx0BtgCOYoSiMFARQ.jpg",
+                    "id": 985524,
+                    "title": "Hummadruz",
+                    "original_language": "tr",
+                    "original_title": "Hummadruz",
+                    "overview": "“Hummadruz” is the scientific term for certain mysterious unidentifiable sounds that come from the earth. They say that especially those who have left their homeland constantly hear these sounds. The first part of this film takes place in the arid land east of Turkey. Memories of a childhood romance, children’s games and laughter, sleeping with an ill mother, are sandwiched with close-up images of eyes wide-open, blood, fear, and tension. The second narrative half tells the story of a man and his infant son who for no apparent reason jump to their death off a bridge on the Bosphorus, and a wife who follows. Dramatizing a true story, the film expresses the desperation and frustration of those who had no choice but to migrate to Istanbul from their beloved homeland.",
+                    "poster_path": "/2pcykgALJTYOPlHLPdYZTaJu53C.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        99
+                    ],
+                    "popularity": 0.6,
+                    "release_date": "1999-03-14",
+                    "video": false,
+                    "vote_average": 0.0,
+                    "vote_count": 1
+                }
+            ]
+        },
+        {
+            "adult": false,
+            "id": 3520649,
+            "name": "İlyas Daşdan",
+            "original_name": "İlyas Daşdan",
+            "media_type": "person",
+            "popularity": 0.6,
+            "gender": 0,
+            "known_for_department": "Acting",
+            "profile_path": null,
+            "known_for": [
+                {
+                    "adult": false,
+                    "backdrop_path": "/uXtLEpuhTPgWdvl4APS6HfbsfWg.jpg",
+                    "id": 528002,
+                    "title": "Baba Nerdesin Kayboldum",
+                    "original_language": "tr",
+                    "original_title": "Baba Nerdesin Kayboldum",
+                    "overview": "",
+                    "poster_path": "/v2VAE5ocS5wtbIwwkA3j4KellPa.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        18
+                    ],
+                    "popularity": 0.646,
+                    "release_date": "2018-06-22",
+                    "video": false,
+                    "vote_average": 0.0,
+                    "vote_count": 0
+                }
+            ]
+        },
+        {
+            "adult": false,
+            "id": 2355340,
+            "name": "Alda Das-Dores Wilson",
+            "original_name": "Alda Das-Dores Wilson",
+            "media_type": "person",
+            "popularity": 0.6,
+            "gender": 0,
+            "known_for_department": "Production",
+            "profile_path": null,
+            "known_for": [
+                {
+                    "adult": false,
+                    "backdrop_path": null,
+                    "id": 613379,
+                    "title": "Under Water: Dive Deep",
+                    "original_language": "en",
+                    "original_title": "Under Water: Dive Deep",
+                    "overview": "Did you ever loose someone you love the most? Under Water: A surreal drama that chronicles Sii's journey to accept her son's untimely death at sea.",
+                    "poster_path": "/hOBXtKAtpIhYRe31JIAxdtDJ5Jr.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [],
+                    "popularity": 0.6,
+                    "release_date": "2016-09-30",
+                    "video": false,
+                    "vote_average": 0.0,
+                    "vote_count": 0
+                }
+            ]
+        },
+        {
+            "adult": false,
+            "id": 4235152,
+            "name": "Merve Dasdemir",
+            "original_name": "Merve Dasdemir",
+            "media_type": "person",
+            "popularity": 0.6,
+            "gender": 0,
+            "known_for_department": "Acting",
+            "profile_path": null,
+            "known_for": [
+                {
+                    "adult": false,
+                    "backdrop_path": null,
+                    "id": 1169852,
+                    "title": "Altın Gün - Rock en Seine 2023",
+                    "original_language": "fr",
+                    "original_title": "Altın Gün - Rock en Seine 2023",
+                    "overview": "",
+                    "poster_path": "/5UXiMD8bbEJyQS3htQlDzsAWoS2.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        10402
+                    ],
+                    "popularity": 0.6,
+                    "release_date": "2023-08-26",
+                    "video": false,
+                    "vote_average": 7.0,
+                    "vote_count": 1
+                }
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/m1TOfgljbT3jOez3b4l1I1tm82W.jpg",
+            "id": 9078,
+            "title": "The Sword in the Stone",
+            "original_language": "en",
+            "original_title": "The Sword in the Stone",
+            "overview": "Wart is a young boy who aspires to be a knight's squire. On a hunting trip he falls in on Merlin, a powerful but amnesiac wizard who has plans for him beyond mere squiredom. He starts by trying to give him an education, believing that once one has an education, one can go anywhere. Needless to say, it doesn't quite work out that way.",
+            "poster_path": "/dYQhKThGXl3xQv71Ysw0RSmVmBA.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                16,
+                10751,
+                14
+            ],
+            "popularity": 32.274,
+            "release_date": "1963-12-25",
+            "video": false,
+            "vote_average": 7.253,
+            "vote_count": 3649
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/5RWxXz59AVXgZQ3uvK6pBtmOhgP.jpg",
+            "id": 12502,
+            "name": "Oobi",
+            "original_language": "en",
+            "original_name": "Oobi",
+            "overview": "Oobi is a Parents' Choice Gold Award-winning television series on the Noggin channel. Oobi, a bare-hand puppet (with eyes and accessories) focuses on the stage in a young child’s life when everything in his or her world is new and incredible.\n\nOobi is a show about wonder. It speaks to the stage in a young child's life when everything is new and incredible: building a block tower, making cookies. Oobi is a show about children's first awkward attempts at mastery and meaning. It's a show about the everyday revelations.",
+            "poster_path": "/4oxnunT1lv62abqsbwOihK3Afv7.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                10751,
+                10762
+            ],
+            "popularity": 21.418,
+            "first_air_date": "2000-12-01",
+            "vote_average": 6.75,
+            "vote_count": 4,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "id": 2073224,
+            "name": "Kimyakhanim Dashdiyeva",
+            "original_name": "Kimyakhanim Dashdiyeva",
+            "media_type": "person",
+            "popularity": 0.6,
+            "gender": 0,
+            "known_for_department": "Acting",
+            "profile_path": null,
+            "known_for": [
+                {
+                    "adult": false,
+                    "backdrop_path": null,
+                    "id": 136730,
+                    "title": "Buta",
+                    "original_language": "az",
+                    "original_title": "Buta",
+                    "overview": "\"Buta\" is the story of a lonely 7-year old boy (named Buta), who lives in a mountain village with his grandmother. He is befriended by an old man, a liquid soap merchant who once loved (and lost) Buta's grandmother. The old man's friendship and wise advice helps Buta to overcome his difficulties in life. Buta's grandmother, in the meantime, is weaving a special carpet in memory of Buta's mother. The carpet features a special pattern (also called \"Buta\"), which represents love. The boy is inspired by his grandmother's work, and decides to make his own \"buta\" made of rocks and stones, high on the top of the mountain...",
+                    "poster_path": "/cqIt5Pk4V70JSbCkb8A3x4SMlpa.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        18
+                    ],
+                    "popularity": 1.101,
+                    "release_date": "2011-03-11",
+                    "video": false,
+                    "vote_average": 0.0,
+                    "vote_count": 0
+                }
+            ]
+        }
     ],
-    "totalResults": "147",
-    "Response": "True"
-    }
+    "total_pages": 1,
+    "total_results": 10
+}

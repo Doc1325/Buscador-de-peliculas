@@ -1,22 +1,35 @@
 
+.main-content{
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+    border-radius: 8px ;
+    margin: 1rem 0px;
+    border: 1.5px solid rgb(6, 91, 91);
+}
+.main-content h1{
+    text-align: center;
+}
 .movieInfoContainer {
     font-family: Arial, Helvetica, sans-serif;
     padding: 1rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-
     gap: 2rem;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
-    border-radius: 8px ;
-    margin: 1rem 0px;
 
+
+}
+
+
+.movieInfoContainer p{
+max-width: 900px;
 }
 
 .primary-info{
     font-size: large;
 }
 iframe{
+    margin-top: 50px;
 
     width: 100%;
     height: 500px;
@@ -74,5 +87,50 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
     font-size:1rem;
     gap: 1.5rem;
     align-items: baseline;
+}
+.similar {
+    padding: 4rem;
+    margin: 1rem 0px;
+
+    border-radius: 16px ;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, .2);
+    border: 1.5px solid rgb(6, 91, 91);
+
+}
+
+.similar h2{
+    font-size: 2rem;
+margin-top: .1rem;
+}
+
+iframe{
+    border: none;
+
+    border-radius: 16px ;
+    aspect-ratio: 20/9;
+}
+.providers-section{
+   text-align: center;
+   padding-bottom: 2rem;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+   border-radius: 8px ;
+}
+
+.providers-section h3{
+    font-size: 1.8em;
+margin-bottom: 1rem;
+}
+.Providers{
+    gap: 1rem;
+    display: flex;
+    align-content: baseline;
+    justify-content: center;
+
+    
+}
+.providerContainer img{
+width: 50px;
+border-radius: 5%;
+outline: 0;
 }
 

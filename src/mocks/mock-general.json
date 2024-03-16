@@ -1,0 +1,421 @@
+{
+    "page": 1,
+    "results": [
+      {
+        "adult": false,
+        "backdrop_path": "/pwGmXVKUgKN13psUjlhC9zBcq1o.jpg",
+        "id": 634492,
+        "title": "Madame Web",
+        "original_language": "en",
+        "original_title": "Madame Web",
+        "overview": "Una historia de origen de la clarividente conocida como Madame Web, cuyas habilidades psíquicas le permiten ver dentro del mundo de las arañas.",
+        "poster_path": "/4gCwRJWKG7PnEVtCxgKymF9kKxO.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          878,
+          28,
+          12
+        ],
+        "popularity": 1264.699,
+        "release_date": "2024-02-14",
+        "video": false,
+        "vote_average": 5.5,
+        "vote_count": 145
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/oBIQDKcqNxKckjugtmzpIIOgoc4.jpg",
+        "id": 969492,
+        "title": "Rescate imposible",
+        "original_language": "en",
+        "original_title": "Land of Bad",
+        "overview": "Kinney, un controlador de apoyo aéreo con poca experiencia, se incorpora a un equipo Delta Force en una misión en Filipinas. Cuando el equipo queda atrapado sin armas, las oportunidades de sobrevivir dependen de la habilidad de Reaper, un piloto de drones de las Fuerzas Aéreas.",
+        "poster_path": "/lZjFghdoAr4ZMnvTC9n2YymxZOl.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          28,
+          53,
+          10752
+        ],
+        "popularity": 172.221,
+        "release_date": "2024-01-25",
+        "video": false,
+        "vote_average": 6.2,
+        "vote_count": 19
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/nOI4Pv6LGpxEdvwRAHJR8aIcbgf.jpg",
+        "id": 210098,
+        "name": "La última familia ninja",
+        "original_language": "ja",
+        "original_name": "忍びの家 House of Ninjas",
+        "overview": "Años después de abandonar sus formidables vidas como ninjas, una familia desestructurada retoma sus misteriosas misiones para plantarle cara a una amenaza inquietante.",
+        "poster_path": "/lSVSRrXFI54UGBHR3UEOYyFWrnw.jpg",
+        "media_type": "tv",
+        "genre_ids": [
+          18,
+          10759
+        ],
+        "popularity": 219.289,
+        "first_air_date": "2024-02-15",
+        "vote_average": 8,
+        "vote_count": 15,
+        "origin_country": [
+          "JP"
+        ]
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/zW0v2YT74C6tRafzqqBkfSqLAN0.jpg",
+        "id": 52814,
+        "name": "Halo",
+        "original_language": "en",
+        "original_name": "Halo",
+        "overview": "En el siglo 26, la humanidad tiene que lidiar con una amenaza alienígena conocida como the Covenant (El Pacto). Halo tejerá historias personales repletas de acción, aventura y una enriquecedora visión del futuro. La serie es una historia independiente inspirada en la franquicia del videojuego, en lugar de una continuación, adaptación o precuela.",
+        "poster_path": "/m8tW2ssuqib10BUlUZfbYlfqEfd.jpg",
+        "media_type": "tv",
+        "genre_ids": [
+          10759,
+          10765
+        ],
+        "popularity": 2630.123,
+        "first_air_date": "2022-03-24",
+        "vote_average": 8.306,
+        "vote_count": 2179,
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/4l65BWqJBl7hBwdIwp2nQdwsOuw.jpg",
+        "id": 850165,
+        "title": "El clan de hierro",
+        "original_language": "en",
+        "original_title": "The Iron Claw",
+        "overview": "Basada en la vida de los inseparables hermanos Von Erich, que hicieron historia en el competitivo mundo de la lucha libre profesional a principios de la década de los 80. A través de la tragedia y el triunfo, bajo la sombra de su dominante padre y entrenador, los hermanos buscan la inmortalidad en el escenario más importante del deporte.",
+        "poster_path": "/rZ8j1LnAPxIwsGEN7oC7gOHUQK1.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          18,
+          36
+        ],
+        "popularity": 284.586,
+        "release_date": "2023-12-21",
+        "video": false,
+        "vote_average": 7.518,
+        "vote_count": 220
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/nBZzOG1ho4a4hikxRiL2ZR3H0r.jpg",
+        "id": 1217343,
+        "title": "This Is Me…Now: Una historia de amor",
+        "original_language": "en",
+        "original_title": "This Is Me…Now",
+        "overview": "Una mirada musical y visual a la públicamente escrutada vida amorosa de JLo.",
+        "poster_path": "/w1zSj0Nnl9UD92OGlqzwrIfbXUR.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          10402
+        ],
+        "popularity": 88.367,
+        "release_date": "2024-02-15",
+        "video": false,
+        "vote_average": 5.75,
+        "vote_count": 17
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/8SwK37xrQnLnLeLqdy3ByH09wI1.jpg",
+        "id": 1026436,
+        "title": "Miller's Girl",
+        "original_language": "en",
+        "original_title": "Miller's Girl",
+        "overview": "Una tarea de escritura creativa produce resultados complejos entre un maestro y su estudiante talentosa.",
+        "poster_path": "/p49MEOKe1myBhqcnSc6TcOIwXve.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          18,
+          53
+        ],
+        "popularity": 132.919,
+        "release_date": "2024-01-18",
+        "video": false,
+        "vote_average": 7.074,
+        "vote_count": 27
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/hYmqZt9LYNLxQvlDqOBnYAfV2Oq.jpg",
+        "id": 1053544,
+        "title": "El abismo de Kiruna",
+        "original_language": "sv",
+        "original_title": "Avgrunden",
+        "overview": "Frigga intenta equilibrar su arriesgado trabajo como directora de seguridad en la mina Kiirunavaara con su vida familiar, su nuevo amor y su ex, que no quiere dejarlo ir. Pero cuando de repente el suelo empieza a temblar bajo sus pies, el enigma de la vida deja de importar y comienza la lucha por no ser arrastrado al abismo.",
+        "poster_path": "/uJBuyNCXqwFME5BV1Dt09Abs1UC.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          53,
+          18,
+          28
+        ],
+        "popularity": 40.18,
+        "release_date": "2023-09-15",
+        "video": false,
+        "vote_average": 6.364,
+        "vote_count": 11
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/H9zb8ODFfFDcJ0MDPIDJfkWt7.jpg",
+        "id": 1128606,
+        "title": "Snoopy presenta: Bienvenido a la pandilla, Franklin",
+        "original_language": "en",
+        "original_title": "Snoopy Presents: Welcome Home, Franklin",
+        "overview": "Franklin es nuevo en la ciudad y quiere hacer amigos, pero sus tácticas habituales no funcionan con la pandilla Peanuts. Cuando llega la carrera de carritos, la toma como una oportunidad para impresionar a sus nuevos amigos y forma equipo con el único niño que no tiene pareja: Carlitos.",
+        "poster_path": "/gxK1ibWJ38P19cYwavpRmWxCMf4.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          16,
+          10751
+        ],
+        "popularity": 63.326,
+        "release_date": "2024-02-15",
+        "video": false,
+        "vote_average": 10,
+        "vote_count": 2
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/4woSOUD0equAYzvwhWBHIJDCM88.jpg",
+        "id": 1096197,
+        "title": "Atrapados en lo profundo",
+        "original_language": "en",
+        "original_title": "No Way Up",
+        "overview": "Esta película sigue a personajes de orígenes muy diferentes que se juntan cuando el avión en el que viajan se estrella en el Océano Pacífico. Cuando el avión se detiene peligrosamente cerca del borde de un barranco con los pasajeros y la tripulación atrapados en una bolsa de aire, se produce una lucha de pesadilla por la supervivencia en la que el suministro de aire se agota y los peligros se acercan por todos lados.",
+        "poster_path": "/eXWolOyKo62unHQR6kzZXo8LqI5.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          28,
+          27,
+          53
+        ],
+        "popularity": 98.647,
+        "release_date": "2024-01-18",
+        "video": false,
+        "vote_average": 5.2,
+        "vote_count": 17
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/A0EqMM4WZpzfxpdoDoqICCpzSQ1.jpg",
+        "id": 609681,
+        "title": "The Marvels",
+        "original_language": "en",
+        "original_title": "The Marvels",
+        "overview": "Cuando sus obligaciones la envían a un agujero de gusano vinculado a un revolucionario kree, los poderes de Carol Danvers, la capitana Marvel, se entremezclan con los de Kamala Khan, también conocida como la Sra. Marvel y la sobrina de Carol, ahora astronauta de S.A.B.E.R., Monica Rambeau. Juntas, deberán salvar el universo como \"The Marvels\".",
+        "poster_path": "/vpuuFM032yiX8tox4L84Wl9MGjG.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          878,
+          12,
+          28
+        ],
+        "popularity": 1159.02,
+        "release_date": "2023-11-08",
+        "video": false,
+        "vote_average": 6.281,
+        "vote_count": 1740
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/y3sKoItrKZdVEfPeLyoE9m5OG2v.jpg",
+        "id": 695721,
+        "title": "Los Juegos del Hambre: Balada de pájaros cantores y serpientes",
+        "original_language": "en",
+        "original_title": "The Hunger Games: The Ballad of Songbirds & Snakes",
+        "overview": "Ambientada en un Panem postapocalíptico, nos hace retroceder varias décadas antes del comienzo de las aventuras de Katniss Everdeen. El joven Coriolanus Snow será el mentor de Lucy Gray Baird, la niña seleccionada como tributo del empobrecido Distrito 12. La joven sorprenderá a todos al cantar en la ceremonia de inauguración de los Décimos Juegos del Hambre en los que Snow intentará aprovecharse de su talento y encanto para sobrevivir.",
+        "poster_path": "/lQS3Owbte49Mkz5nFach4UgSZDF.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          18,
+          878,
+          28
+        ],
+        "popularity": 844.626,
+        "release_date": "2023-11-15",
+        "video": false,
+        "vote_average": 7.198,
+        "vote_count": 1776
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/4MCKNAc6AbWjEsM2h9Xc29owo4z.jpg",
+        "id": 866398,
+        "title": "Beekeeper: El protector",
+        "original_language": "en",
+        "original_title": "The Beekeeper",
+        "overview": "La brutal campaña de venganza de Adam Clay adquiere tintes nacionales tras revelarse que es un antiguo agente de una poderosa organización clandestina conocida como \"Beekeeper\".",
+        "poster_path": "/bHZQYKJV1rV01S3kNZ3hEYz8VNM.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          28,
+          53,
+          18
+        ],
+        "popularity": 790.755,
+        "release_date": "2024-01-10",
+        "video": false,
+        "vote_average": 7.261,
+        "vote_count": 1172
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/yyFc8Iclt2jxPmLztbP617xXllT.jpg",
+        "id": 787699,
+        "title": "Wonka",
+        "original_language": "en",
+        "original_title": "Wonka",
+        "overview": "Basada en el personaje que protagoniza \"Charlie y la fábrica de chocolate\", el libro infantil más emblemático de Roald Dahl y uno de los más vendidos de todos los tiempos, \"Wonka\" cuenta la historia de cómo el mayor inventor, mago y chocolatero del mundo se convirtió en el querido Willy Wonka que conocemos hoy en día.",
+        "poster_path": "/tFyQa5WQqldIL44HBLaCmn5eERD.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          35,
+          10751,
+          14
+        ],
+        "popularity": 1341.409,
+        "release_date": "2023-12-06",
+        "video": false,
+        "vote_average": 7.191,
+        "vote_count": 2152
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/uhUO7vQQKvCTfQWubOt5MAKokbL.jpg",
+        "id": 693134,
+        "title": "Dune: Parte dos",
+        "original_language": "en",
+        "original_title": "Dune: Part Two",
+        "overview": "Sigue el viaje mítico de Paul Atreides mientras se une a Chani y los Fremen en una guerra de venganza contra los conspiradores que destruyeron a su familia. Al enfrentarse a una elección entre el amor de su vida y el destino del universo conocido, Paul se esfuerza por evitar un futuro terrible que solo él puede prever.",
+        "poster_path": "/v2NN1TMK3ifuiEyawa3ukkcSOUQ.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          878,
+          12
+        ],
+        "popularity": 290.85,
+        "release_date": "2024-02-27",
+        "video": false,
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/cnqwv5Uz3UW5f086IWbQKr3ksJr.jpg",
+        "id": 572802,
+        "title": "Aquaman y El Reino Perdido",
+        "original_language": "en",
+        "original_title": "Aquaman and the Lost Kingdom",
+        "overview": "Al no poder derrotar a Aquaman la primera vez, Black Manta, todavía impulsado por la necesidad de vengar la muerte de su padre, no se detendrá ante nada para derrotar a Aquaman de una vez por todas. Esta vez Black Manta es más formidable que nunca y ejerce el poder del mítico Tridente Negro, que desata una fuerza antigua y malévola.  Para derrotarlo, Aquaman recurrirá a su hermano encarcelado Orm, el ex rey de la Atlántida, para forjar una alianza improbable. Juntos, deben dejar de lado sus diferencias para proteger su reino y salvar a la familia de Aquaman, y al mundo, de una destrucción irreversible.",
+        "poster_path": "/3OdMJBOGkp62e0DfY4ZykL9RuCP.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          28,
+          12,
+          14
+        ],
+        "popularity": 852.854,
+        "release_date": "2023-12-20",
+        "video": false,
+        "vote_average": 6.905,
+        "vote_count": 1699
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/6snBXmgkscLEJQmxx46qEIlqYlB.jpg",
+        "id": 46518,
+        "name": "Los amos del aire",
+        "original_language": "en",
+        "original_name": "Masters of the Air",
+        "overview": "Durante la Segunda Guerra Mundial, muchos aviadores arriesgan sus vidas en el Grupo de bombarderos número 100, una hermandad forjada por el valor, la pérdida y el triunfo.",
+        "poster_path": "/fHUxCSg5T6jyQ74jSnO2vC026DR.jpg",
+        "media_type": "tv",
+        "genre_ids": [
+          10768,
+          18
+        ],
+        "popularity": 649.178,
+        "first_air_date": "2024-01-25",
+        "vote_average": 7.741,
+        "vote_count": 87,
+        "origin_country": [
+          "US"
+        ]
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/nTPFkLUARmo1bYHfkfdNpRKgEOs.jpg",
+        "id": 1072790,
+        "title": "Cualquiera menos tú",
+        "original_language": "en",
+        "original_title": "Anyone But You",
+        "overview": "Después de una primera cita increíble, la ardiente atracción entre ambos se enfría. Parecían la pareja perfecta, pero algo sucede y la cosa no va a más. Hasta que se reencuentran inesperadamente en una boda en Australia. Allí hacen lo que haría cualquier adulto: fingir que son una pareja.",
+        "poster_path": "/3ltpe5KJt8c8hxHiF2u4jCinD4U.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          35,
+          10749
+        ],
+        "popularity": 611.822,
+        "release_date": "2023-12-21",
+        "video": false,
+        "vote_average": 6.9,
+        "vote_count": 444
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/jYEW5xZkZk2WTrdbMGAPFuBqbDc.jpg",
+        "id": 438631,
+        "title": "Dune",
+        "original_language": "en",
+        "original_title": "Dune",
+        "overview": "En un lejano futuro, la galaxia conocida es gobernada mediante un sistema feudal de casas nobles bajo el mandato del Emperador. Las alianzas y la política giran entorno a un pequeño planeta, Dune,  del que extrae la \"especia melange\", la materia prima que permite los viajes espaciales. La Casa Atreides, bajo el mandato del Duque Leto Atreides recibe el encargo de custodiar el planeta, relevando en la encomienda a sus históricos enemigos, los Harkonnen. Paul Atreides, hijo del duque, se verá atrapado en las intrigas políticas mientras descubre el destino que le deparan los desiertos de Dune.",
+        "poster_path": "/hIEKzq0klqtz1H3S7QxzH4mMbvT.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          878,
+          12
+        ],
+        "popularity": 377.644,
+        "release_date": "2021-09-15",
+        "video": false,
+        "vote_average": 7.786,
+        "vote_count": 10084
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/1ZSKH5GGFlM8M32K34GMdaNS2Ew.jpg",
+        "id": 802219,
+        "title": "Bob Marley: One Love",
+        "original_language": "en",
+        "original_title": "Bob Marley: One Love",
+        "overview": "Biopic sobre la leyenda del reggae.",
+        "poster_path": "/yISZvHNKXs7vg9gFanOC7G4WU6X.jpg",
+        "media_type": "movie",
+        "genre_ids": [
+          10402,
+          18
+        ],
+        "popularity": 453.384,
+        "release_date": "2024-02-14",
+        "video": false,
+        "vote_average": 6.782,
+        "vote_count": 55
+      }
+    ],
+    "total_pages": 1000,
+    "total_results": 20000
+  }
