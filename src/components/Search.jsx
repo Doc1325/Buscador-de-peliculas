@@ -32,19 +32,17 @@ export function Search () {
 
   return (
 
-    <header>
-      <form action='' onSubmit={handleSubmit}>
-        <input
-          style={{ border: '1px solid transparent', borderColor: error ? 'red' : 'transparent' }}
-          value={search}
-          onChange={handleChange}
-          placeholder='Avengers, Star wars ...' name='search' id=''
-        />
+    <form action='' onSubmit={handleSubmit}>
+      <input
+        style={{ border: '1px solid transparent', borderColor: error ? 'red' : 'transparent' }}
+        value={search}
+        onChange={handleChange}
+        placeholder='Avengers, Star wars ...' name='search' id=''
+      />
 
-        <button type='submit'>Buscar</button>
-        <input type='checkbox' name='' id='' onChange={handleSort} checked={sort} />
+      <button type='submit'>Buscar</button>
+      <input type='checkbox' name='' id='' onChange={handleSort} checked={sort} />
 
-      </form>
-    </header>
+    </form>
   )
 }

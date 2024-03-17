@@ -33,7 +33,7 @@ function Slideshow ({ movies }) {
   }
 
   return (
-    <div className='slideshow-container'>
+    <div className='slideshow-container' lazy>
 
       {image.length === movies?.length
         ? movies?.map((movie, index) => {

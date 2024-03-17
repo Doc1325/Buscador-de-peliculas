@@ -8,7 +8,7 @@ const options = {
 }
 // navigator.language
 const END_POINTS = {
-  search: (search) => `https://api.themoviedb.org/3/search/multi&query=${search}&include_adult=false&language=do-es&page=1`,
+  search: (search) => `https://api.themoviedb.org/3/search/multi?query=${search}&include_adult=false&language=es-DO&page=1`,
   info: (query, type) => `https://api.themoviedb.org/3/${type}/${query}?language=es-DO&append_to_response=videos,similar,watch/providers`, // respuestas extra se colocan con  coma
   general: 'https://api.themoviedb.org/3/trending/all/day?&language=es-DO&append_to_response=images',
   movies: 'https://api.themoviedb.org/3/trending/movie/day?&language=es-DO&append_to_response=images',

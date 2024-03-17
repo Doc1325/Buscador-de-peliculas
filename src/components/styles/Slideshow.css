@@ -1,4 +1,5 @@
 /* Slideshow container */
+
 .slideshow-container {
   position: relative;
   width: 98%;
@@ -79,3 +80,38 @@
 .next {
   right: 0;
 }
+
+/*Escritorio*/
+@media (min-width: 1199.98px)  {
+
+}
+/*Fin Escritorio*/
+
+/*Tablet*/
+/*Portrait*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
+  .slideshow-container{
+    display: none;
+  }
+}
+
+/*landscape*/
+@media (min0-width: 991.98px) and (max-width: 1199.98px)and (orientation:landscape) {
+  .slideshow-container{
+    display: none;
+  }
+}
+/*fin tablet*/
+
+/*movil*/
+/*Portrait*/
+/*Default*/
+@media (max-width: 575.98px)and (orientation:portrait) {
+  .slideshow-container{
+    display: none;
+  }
+}
+/*landscape*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:landscape) {
+}
+/*fin movil*/
