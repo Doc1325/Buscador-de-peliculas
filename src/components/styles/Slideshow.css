@@ -94,9 +94,15 @@
     display: none;
   }
 }
+@media (min-width: 576px) and (max-width: 890.98px) and (orientation:landscape) {
+  .slideshow-container{
+    display: none;
+  }
+  
+}
 
 /*landscape*/
-@media (min0-width: 991.98px) and (max-width: 1199.98px)and (orientation:landscape) {
+@media (min-width: 991.98px) and (max-width: 1199.98px)and (orientation:landscape) {
   .slideshow-container{
     display: none;
   }

@@ -45,7 +45,7 @@ function Slideshow ({ movies }) {
               <img src={image[index].background} alt='' className='slide-background' />
               <section className='description'>
                 <img src={image[index].logo} alt='' className='slide-logo' />
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus blanditiis eum ab unde, sint rem aliquam cupiditate odit distinctio. Sapiente itaque amet quaerat voluptatem, molestiae hic earum ab reiciendis iste.</p>
+                {/* <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus blanditiis eum ab unde, sint rem aliquam cupiditate odit distinctio. Sapiente itaque amet quaerat voluptatem, molestiae hic earum ab reiciendis iste.</p> */}
               </section>
             </div>
           )

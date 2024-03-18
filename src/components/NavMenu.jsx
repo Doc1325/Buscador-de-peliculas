@@ -37,9 +37,7 @@ export function NavMenu () {
               </Link>
             </li>
 
-            <li className='menu-item'>
-              <a href='http://'>Coming soon</a>
-            </li>
+         
           </ul>
 
         </div>
@@ -59,9 +57,7 @@ export function NavMenu () {
             </Link>
           </li>
 
-          <li className='menu-item'>
-            <a href='http://'>Coming soon</a>
-          </li>
+      
           <li><Search /></li>
         </ul>
 

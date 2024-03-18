@@ -29,10 +29,16 @@ max-width: 900px;
     font-size: large;
 }
 iframe{
+border: none;
     margin-top: 50px;
-
-    width: 100%;
+display: block;
+margin-left: auto;
+margin-right:auto ;
     height: 500px;
+    width: 100%;
+    border-radius: 16px ;
+    aspect-ratio: 20/9;
+    text-align: center;
 }
 .moviePoster{
 max-width: 250px;
@@ -103,12 +109,7 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
 margin-top: .1rem;
 }
 
-iframe{
-    border: none;
 
-    border-radius: 16px ;
-    aspect-ratio: 20/9;
-}
 .providers-section{
    text-align: center;
    padding-bottom: 2rem;
@@ -134,3 +135,52 @@ border-radius: 5%;
 outline: 0;
 }
 
+/*Escritorio*/
+@media (min-width: 1199.98px)  {
+}
+/*Fin Escritorio*/
+
+/*Tablet*/
+/*Portrait*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
+
+    iframe {
+        width: 100%;
+        height: 50vh;
+    }
+}
+
+/*landscape*/
+@media (min-width: 991.98px) and (max-width: 1199.98px)and (orientation:landscape) {
+    iframe {
+        width: 100%;
+        height: 50vh;
+    }
+}
+/*fin tablet*/
+
+/*movil*/
+/*Portrait*/
+/*Default*/
+@media (max-width: 575.98px)and (orientation:portrait) {
+    iframe {
+        max-width: 400px;
+        height: 200px;
+    }
+    .movieInfoContainer {
+        flex-direction: column;
+    }
+ }
+/*landscape*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:landscape) {
+    iframe {
+        max-width: 400px;
+        height: 200px;
+    }
+
+    .movieInfoContainer {
+        flex-direction: column;
+    }
+ 
+}
+/*fin movil*/

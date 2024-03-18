@@ -192,5 +192,13 @@ display: none;
         width:80%;
     }
 }
-/*fin movil*/
 
+@media (min-width: 576px) and (max-width: 890.98px) and (orientation:landscape) {
+   
+ 
+    .vertical-items {
+        height: 100%;
+    }
+
+}
+/*fin movil*/
