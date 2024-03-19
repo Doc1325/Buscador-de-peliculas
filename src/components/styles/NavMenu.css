@@ -47,12 +47,23 @@ header {
     height: fit-content;
     background-color: #202b38;
     width: 200px;
-    gap: 1rem;
-    font-size: 1.2rem;
+    gap: calc(100% / 10); 
+    font-size: 1.4rem;
     text-decoration: none;
     list-style-type: none;
     margin: 0;
+    top: 4rem; 
+    box-sizing: border-box; 
+    padding: 10px;
+    text-align: center; 
+    position: absolute; 
+    left: 0; 
+    width: 100%; 
+    height: 50vh; 
+    background-color: #202b38; 
+    border: 1px solid #9fd3c7; 
 }
+
 
 .menu-button {
     max-width: 200px;
@@ -83,20 +94,7 @@ header {
         font-size: 1rem;
     }
 
-    .vertical-items {
-        top: 4rem;
-        box-sizing: border-box;
-        padding: 10px;
-        text-align: center;
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 50vh;
-        font-size: 1.4rem;
-        gap: calc(100% / 10);
-        background-color: #202b38;
-        border: 1px solid #9fd3c7;
-    }
+  
 
     .logo {
         display: none;
@@ -133,24 +131,10 @@ header {
         justify-content: space-between;
         font-size: 1rem;
     }
-    .vertical-items {
-        box-sizing: border-box;
-        padding: 10px;
-        text-align: center;
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 50vh;
-        font-size: 1.4rem;
-        gap: calc(100% / 10);
-        background-color: #202b38;
-        border: 1px solid #9fd3c7;
-    }
+  
 
-    .vertical-items::-moz-focus-outer {
-        display: none;
-    }
 
+ 
     .logo {
         display: none;
     }
@@ -176,9 +160,7 @@ header {
 }
 
 @media (min-width: 576px) and (max-width: 890.98px) and (orientation: landscape) {
-    .vertical-items {
-        height: 100%;
-    }
+  
     .vertical-menu {
         width: 100vw;
         display: flex;

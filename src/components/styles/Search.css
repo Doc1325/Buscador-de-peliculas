@@ -6,5 +6,38 @@ form{
  font-size: 10px;
     }
 
+  .mobile-search {
+    display: none;
+  }
+
+ 
+.invisible {
+  display: none;
+}
+    @media (width < 900px){
+     
+ .desktop-search {
+  display: none;
+}
+
+.mobile-search {
+  display: flex;
+}
+.input-mobile {
+  width: 100%;
+}
+.mobile-search-button {
+  padding: 0;
+  background-color: transparent;
+  font-size: 24px;
+  box-shadow: none;
+}
+
+.mobile-search-button:hover, .mobile-search-button:focus {
+  background: none;
+  box-shadow: none;
+
+}
+    }
   
 
