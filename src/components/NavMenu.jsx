@@ -19,7 +19,7 @@ export function NavMenu () {
       <header>
 
         <div className='vertical-menu'>
-          <button onClick={handleMobileMenu}>
+          <button onClick={handleMobileMenu} className='menu-button'>
             {
   mobile ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faBars} />
 
@@ -36,14 +36,13 @@ export function NavMenu () {
                 Series
               </Link>
             </li>
-
-         
           </ul>
-
+          <Search />
         </div>
         <Link to='/'>
           <img src={logo} alt='' className='logo' />
         </Link>
+
         <ul className='horizontal-menu'>
 
           <li className='menu-item'>
@@ -57,7 +56,6 @@ export function NavMenu () {
             </Link>
           </li>
 
-      
           <li><Search /></li>
         </ul>
 

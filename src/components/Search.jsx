@@ -1,6 +1,7 @@
 import { useCallback, useState } from 'react'
 import { useSearch } from '../hooks/useSearch'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import debounce from 'just-debounce-it'
 import './styles/Search.css'
 export function Search () {
@@ -40,8 +41,10 @@ export function Search () {
         placeholder='Avengers, Star wars ...' name='search' id=''
       />
 
-      <button type='submit'>Buscar</button>
-      <input type='checkbox' name='' id='' onChange={handleSort} checked={sort} />
+      <button type='submit'>
+        <FontAwesomeIcon icon={faSearch} />
+      </button>
+      {/* <input type='checkbox' name='' id='' onChange={handleSort} checked={sort} /> */}
 
     </form>
   )

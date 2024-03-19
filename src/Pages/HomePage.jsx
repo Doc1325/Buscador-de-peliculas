@@ -10,13 +10,21 @@ export function HomePage ({ type }) {
     getMovies({ search: '', type })// paso el objeto en si
   }, [])
 
+  const title = {
+    tv: 'series',
+    movie: 'Peliculas'
+
+  }
+
   return (
     <div className='homepage'>
       <NavMenu />
 
+      <h1 className='page-title'>{title[type]}</h1>
       {!loading
         ? <Slideshow movies={movies?.slice(0, 5)} />
         : null}
+
       <main>
         {loading ? <p>Cargando...</p> : <Movies movies={{ movies, type: null }} />}
       </main>
