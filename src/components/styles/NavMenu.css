@@ -127,9 +127,12 @@ header {
     }
 
     .vertical-menu {
+        width: 100vw;
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 1rem;
     }
-
     .vertical-items {
         box-sizing: border-box;
         padding: 10px;
@@ -160,7 +163,11 @@ header {
     }
 
     .vertical-menu {
-        display: block;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 1rem;
     }
 
     .logo {
@@ -171,5 +178,12 @@ header {
 @media (min-width: 576px) and (max-width: 890.98px) and (orientation: landscape) {
     .vertical-items {
         height: 100%;
+    }
+    .vertical-menu {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 1rem;
     }
 }
