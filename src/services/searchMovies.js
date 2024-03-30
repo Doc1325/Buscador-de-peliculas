@@ -1,4 +1,4 @@
-import links from '../mocks/Links.json'
+import Links from '../mocks/Links.json'
 const API = import.meta.env.VITE_TMDB_API_TOKEN
 const options = {
   method: 'GET',
@@ -67,7 +67,7 @@ function mapProviders (providers) {
         providerId: provider.provider_id,
         providerName: provider.provider_name,
         providerImg: `https://image.tmdb.org/t/p/w500/${provider.logo_path}`,
-        link: links[provider.provider_name] ?? ''
+        link: Links[provider.provider_name] ?? ''
       }
     })
     : []
@@ -78,7 +78,7 @@ function mapProviders (providers) {
         providerId: provider.provider_id,
         providerName: provider.provider_name,
         providerImg: `https://image.tmdb.org/t/p/w500/${provider.logo_path}`,
-        link: links[provider.provider_name] ?? ''
+        link: Links[provider.provider_name] ?? ''
       }
     })
     : []
@@ -88,7 +88,7 @@ function mapProviders (providers) {
         providerId: provider.provider_id,
         providerName: provider.provider_name,
         providerImg: `https://image.tmdb.org/t/p/w500/${provider.logo_path}`,
-        link: links[provider.provider_name] ?? ''
+        link: Links[provider.provider_name] ?? ''
       }
     })
     : []
