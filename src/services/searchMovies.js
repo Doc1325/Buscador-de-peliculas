@@ -1,5 +1,5 @@
 // import Links from '../mocks/Links.json'
-import Links from '/Links'
+import Links from '/Links.json'
 
 const API = import.meta.env.VITE_TMDB_API_TOKEN
 const options = {
