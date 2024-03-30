@@ -33,7 +33,7 @@ function Slideshow ({ movies }) {
   }
 
   return (
-    <div className='slideshow-container' lazy>
+    <div className='slideshow-container'>
 
       {image.length === movies?.length
         ? movies?.map((movie, index) => {
@@ -42,9 +42,9 @@ function Slideshow ({ movies }) {
               key={index}
               className={`slide ${index === currentSlide ? 'slide fade-in' : 'slide fade-out'}`}
             >
-              <img src={image[index].background} alt='' className='slide-background' />
+              <img src={image[index].background} alt='' className='slide-background' loading='lazy' />
               <section className='description'>
-                <img src={image[index].logo} alt='' className='slide-logo' />
+                <img src={image[index].logo} alt='' className='slide-logo' loading='lazy' />
                 {/* <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus blanditiis eum ab unde, sint rem aliquam cupiditate odit distinctio. Sapiente itaque amet quaerat voluptatem, molestiae hic earum ab reiciendis iste.</p> */}
               </section>
             </div>

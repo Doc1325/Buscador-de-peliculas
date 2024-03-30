@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { useSearch } from '../hooks/useSearch'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faXmark } from '@fortawesome/free-solid-svg-icons'
@@ -13,6 +13,16 @@ export function Search () {
     if (search) window.location.href = `/search/${search}/${sort}`
   }, 500)
   , [])
+  const menuRef = useRef()
+  useEffect(() => {
+    function handler (e) {
+      if (!menuRef.current.contains(e.target)) { setViewSearch(false) }
+    }
+    document.addEventListener('mousedown', handler)
+    return () => {
+      document.removeEventListener('mousedown', handler)
+    }
+  })
   function handleSubmit (event) {
     event.preventDefault()
     debouncedMovies(search)
@@ -26,7 +36,7 @@ export function Search () {
     // debouncedMovies(newSearch)
   }
 
-  function handleSort (params) {
+  function handleSort () {
     console.log(!sort)
     setSort(!sort)
   }
@@ -52,9 +62,12 @@ export function Search () {
         {/* <input type='checkbox' name='' id='' onChange={handleSort} checked={sort} /> */}
 
       </form>
-      <div className='mobile-search'>
+      <div className='mobile-search' ref={menuRef}>
 
-        <form action='' onSubmit={handleSubmit}>
+        <form
+          action='' onSubmit={handleSubmit}
+
+        >
 
           <input
             className={`input-mobile ${viewSearch === true ? '' : 'invisible'}`}

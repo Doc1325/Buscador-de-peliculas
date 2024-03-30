@@ -1,3 +1,4 @@
+import links from '../mocks/Links.json'
 const API = import.meta.env.VITE_TMDB_API_TOKEN
 const options = {
   method: 'GET',
@@ -65,7 +66,8 @@ function mapProviders (providers) {
       return {
         providerId: provider.provider_id,
         providerName: provider.provider_name,
-        providerImg: `https://image.tmdb.org/t/p/w500/${provider.logo_path}`
+        providerImg: `https://image.tmdb.org/t/p/w500/${provider.logo_path}`,
+        link: links[provider.provider_name] ?? ''
       }
     })
     : []
@@ -75,7 +77,8 @@ function mapProviders (providers) {
       return {
         providerId: provider.provider_id,
         providerName: provider.provider_name,
-        providerImg: `https://image.tmdb.org/t/p/w500/${provider.logo_path}`
+        providerImg: `https://image.tmdb.org/t/p/w500/${provider.logo_path}`,
+        link: links[provider.provider_name] ?? ''
       }
     })
     : []
@@ -84,10 +87,12 @@ function mapProviders (providers) {
       return {
         providerId: provider.provider_id,
         providerName: provider.provider_name,
-        providerImg: `https://image.tmdb.org/t/p/w500/${provider.logo_path}`
+        providerImg: `https://image.tmdb.org/t/p/w500/${provider.logo_path}`,
+        link: links[provider.provider_name] ?? ''
       }
     })
     : []
+
   const allProviders = new Set([...flatrateProviderList, ...freeProviderList, ...buyProviderList])
   const mappedProviders = [...allProviders]
   return mappedProviders.length !== 0 ? mappedProviders : null
@@ -135,3 +140,8 @@ export async function getImage (media) {
 
   return { background: `https://image.tmdb.org/t/p/original/${background}`, logo: `https://image.tmdb.org/t/p/original/${logo}` }
 }
+
+// export function extractProviders (params) {
+//   Providers.results.forEach(element => {
+//     console.log(element.provider_name)
+//   })}

@@ -10,6 +10,10 @@ form{
     display: none;
   }
 
+  /* .mobile-search:not(:focus-within) .input-mobile{
+    display: none
+  } */
+
  
 .invisible {
   display: none;
@@ -22,6 +26,10 @@ form{
 
 .mobile-search {
   display: flex;
+  width: 50%;
+}
+.mobile-search form {
+width: 100%;
 }
 .input-mobile {
   width: 100%;

@@ -9,9 +9,7 @@ export function NavMenu () {
   const [mobile, setMobile] = useState(false)
 
   function handleMobileMenu () {
-    console.log('hola')
     const newMobile = !mobile
-    console.log(newMobile)
     setMobile(newMobile)
   }
   return (
@@ -40,7 +38,7 @@ export function NavMenu () {
           <Search />
         </div>
         <Link to='/'>
-          <img src={logo} alt='' className='logo' />
+          <img src={logo} alt='' className='logo' loading='lazy' />
         </Link>
 
         <ul className='horizontal-menu'>

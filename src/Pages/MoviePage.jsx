@@ -34,13 +34,14 @@ export function MoviePage () {
             src={`https://www.youtube.com/embed/${movie.clip}?&autoplay=0`}
             allow='accelerometer; autoplay; clipboard-write;encrypted-media; gyroscope; picture-in-picture; web-share'
             allowFullScreen
+            loading='lazy'
           />
         : null}
       <div className='main-content'>
         <h1>{movie.title}</h1>
         <div className='movieInfoContainer'>
           <section className='MovieInfo-left'>
-            <img className='moviePoster' src={movie.image || ''} alt='' />
+            <img className='moviePoster' src={movie.image || ''} alt={`Image of ${movie.title}`} loading='lazy' />
           </section>
           <section className='MovieInfo-right'>
             <p className='primary-info'>{movie.info}</p>
@@ -66,8 +67,15 @@ export function MoviePage () {
             {movie.providers
               ? movie.providers.map(provider =>
                 <div key={provider.providerId} className='providerContainer'>
+                  {
+                  provider.link
+                    ? <a href={provider.link} target='_blank' rel='noreferrer'>
+                      <img src={provider.providerImg} alt='' loading='lazy' />
 
-                  <img src={provider.providerImg} alt='' />
+                      </a>
+                    : <img src={provider.providerImg} alt='' loading='lazy' />
+
+                 }
                 </div>
               )
               : <p>Ningun proveedor disponible en tu región 😥</p>}
