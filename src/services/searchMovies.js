@@ -1,13 +1,11 @@
-let Links = null // Declarar Links como una variable global para que sea accesible en todo el módulo
-
-async function LoadLink () {
-  if (!Links) { // Verificar si los datos ya han sido cargados
-    const dataLink = await fetch('/src/Mocks/Links.json')
-    Links = await dataLink.json()
-    console.log('sad')
-  }
-  return Links // Devolver los datos de los enlaces
-}
+import Links from '../Mocks/Links.json'
+// async function LoadLink () {
+//   if (!Links) { // Verificar si los datos ya han sido cargados
+//     const dataLink = await fetch('/src/Mocks/Links.json')
+//     Links = await dataLink.json()
+//   }
+//   return Links // Devolver los datos de los enlaces
+// }
 const API = import.meta.env.VITE_TMDB_API_TOKEN
 const options = {
   method: 'GET',
@@ -60,14 +58,12 @@ export async function getMovieInfo (searchParameter) {
     duration: timeConvert(movieInfo.runtime ?? movieInfo.episode_run_time),
     clip: movieInfo?.videos?.results[0]?.key ?? null,
     similar: mapMovies(movieInfo.similar.results.slice(0, 8)),
-    providers: await mapProviders(movieInfo['watch/providers'].results.DO)
+    providers: mapProviders(movieInfo['watch/providers'].results.DO)
 
   }
 }
 
-async function mapProviders (providers) {
-  Links = await LoadLink()
-  console.log(Links)
+function mapProviders (providers) {
   const flatrateProviders = providers?.flatrate
   const freeProviders = providers?.free
   const buyProviders = providers?.buy
