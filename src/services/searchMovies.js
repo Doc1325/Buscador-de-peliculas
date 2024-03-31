@@ -1,4 +1,4 @@
-const Links = require('../Mocks/Links.json')
+import Links from '../Mocks/Links.json' assert {type:'json'}
 // let Links
 // LoadLink()
 
