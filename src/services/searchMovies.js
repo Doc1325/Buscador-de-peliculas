@@ -1,3 +1,4 @@
+let Links;
 LoadLink()
 
 async function LoadLink () {
