@@ -1,3 +1,4 @@
+const Linktest = require('../Mocks/Links.json')
 const Links = {
   Netflix: 'https://www.netflix.com/',
   'Amazon Prime Video': 'https://www.amazon.com/Amazon-Video/b/?ie=UTF8&node=2858778011',
