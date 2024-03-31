@@ -1,4 +1,11 @@
-import { Links } from '../Mocks/Links.json'
+async function LoadLink () {
+  const dataLink = await fetch('/src/Mocks/Links.json')
+  const Links = await dataLink.json()
+  return Links
+}
+
+const Links = await LoadLink()
+
 const API = import.meta.env.VITE_TMDB_API_TOKEN
 const options = {
   method: 'GET',
