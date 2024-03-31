@@ -1,4 +1,4 @@
-import Links from 'src/Mocks/Links.json'
+const Links = require('../Mocks/Links.json')
 // let Links
 // LoadLink()
 
