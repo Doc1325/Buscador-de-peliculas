@@ -1,5 +1,4 @@
-let Links;
-LoadLink()
+let Links
 
 async function LoadLink () {
   const dataLink = await fetch('/src/Mocks/Links.json')
@@ -64,6 +63,8 @@ export async function getMovieInfo (searchParameter) {
 }
 
 function mapProviders (providers) {
+
+  Links = LoadLink()
   const flatrateProviders = providers?.flatrate
   const freeProviders = providers?.free
   const buyProviders = providers?.buy
