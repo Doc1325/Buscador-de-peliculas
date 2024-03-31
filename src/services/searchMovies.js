@@ -1,4 +1,4 @@
-import Links from '/src/Mocks/Links.json'
+import Links from 'src/Mocks/Links.json'
 // let Links
 // LoadLink()
 
