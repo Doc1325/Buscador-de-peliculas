@@ -1,4 +1,4 @@
-import Links from '/Mocks/Links.json'
+import Links from 'Mocks/Links.json'
 // async function LoadLink () {
 //   if (!Links) { // Verificar si los datos ya han sido cargados
 //     const dataLink = await fetch('/src/Mocks/Links.json')
