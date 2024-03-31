@@ -1,5 +1,4 @@
-import Links from '../Mocks/Links.json' assert {type:'json'}
-// let Links
+import Links from '/Mocks/Links.json'
 // LoadLink()
 
 // async function LoadLink () {
