@@ -1,4 +1,3 @@
-const Linktest = require('../Mocks/Links.json')
 const Links = {
   Netflix: 'https://www.netflix.com/',
   'Amazon Prime Video': 'https://www.amazon.com/Amazon-Video/b/?ie=UTF8&node=2858778011',
@@ -213,7 +212,6 @@ const Links = {
   CBS: 'https://www.cbs.com/',
   'Film Movement Plus': 'https://www.filmmovementplus.com/'
 }
-
 // async function LoadLink () {
 //   if (!Links) { // Verificar si los datos ya han sido cargados
 //     const dataLink = await fetch('/src/Mocks/Links.json')
