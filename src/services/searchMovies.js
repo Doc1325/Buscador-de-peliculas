@@ -8,7 +8,7 @@ const Links = {
   Crunchyroll: 'https://www.crunchyroll.com/',
   fuboTV: 'https://www.fubo.tv/welcome',
   'HBO Max': 'https://www.hbomax.com/',
-  Max: 'https://maxtvgo.com/',
+  Max: 'https://www.hbomax.com/',
   'Max Amazon Channel': 'https://www.amazon.com/Prime-Video/b/?ie=UTF8&node=2858778011',
   'MGM Plus Amazon Channel': 'https://www.amazon.com/Prime-Video/b/?ie=UTF8&node=2858778011',
   'Crunchyroll Amazon Channel': 'https://www.amazon.com/Prime-Video/b/?ie=UTF8&node=2858778011',
