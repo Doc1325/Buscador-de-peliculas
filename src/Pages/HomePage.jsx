@@ -4,6 +4,7 @@ import { Movies } from '../components/Movies'
 import { useMovies } from '../hooks/useMovies'
 import Slideshow from '../components/Gallery'
 import { NavMenu } from '../components/NavMenu'
+import { Loader } from '../components/Loader'
 export function HomePage ({ type }) {
   const { movies, getMovies, loading } = useMovies({ search: '', sort: false })
   useEffect(() => {
@@ -26,7 +27,7 @@ export function HomePage ({ type }) {
         : null}
 
       <main>
-        {loading ? <Loader></Loader> : <Movies movies={{ movies, type: null }} />}
+        {loading ? <Loader /> : <Movies movies={{ movies, type: null }} />}
       </main>
     </div>
   )
