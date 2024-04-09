@@ -5,7 +5,6 @@ import { useMovies } from '../hooks/useMovies'
 import { useParams } from 'react-router-dom'
 import { NavMenu } from '../components/NavMenu'
 import { Loader } from '../components/Loader'
-Loader
 export function SearchPage () {
   const { search, sort } = useParams()
   console.log(sort)
