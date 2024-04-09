@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './styles/Slideshow.css'
 import { getImage } from '../services/searchMovies'
-
+import { Loader } from './Loader'
 function Slideshow ({ movies }) {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [image, setImage] = useState([])
@@ -50,7 +50,7 @@ function Slideshow ({ movies }) {
             </div>
           )
         })
-        : <p>Cargando mi galeriaz</p>}
+        : <Loader />}
       <button className='prev' onClick={prevSlide}>&#10094;</button>
       <button className='next' onClick={nextSlide}>&#10095;</button>
     </div>

@@ -19,7 +19,7 @@ export function SearchPage () {
       <NavMenu />
 
       <main>
-        {loading ? <p>Cargando...</p> : <Movies movies={{ movies, type: null }} />}
+        {loading ? <Loader /> : <Movies movies={{ movies, type: null }} />}
       </main>
     </div>
   )

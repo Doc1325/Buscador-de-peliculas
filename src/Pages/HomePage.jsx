@@ -26,7 +26,7 @@ export function HomePage ({ type }) {
         : null}
 
       <main>
-        {loading ? <p>Cargando...</p> : <Movies movies={{ movies, type: null }} />}
+        {loading ? <Loader></Loader> : <Movies movies={{ movies, type: null }} />}
       </main>
     </div>
   )

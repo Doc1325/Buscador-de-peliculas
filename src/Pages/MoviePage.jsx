@@ -4,6 +4,7 @@ import { getMovieInfo } from '../services/searchMovies'
 import './styles/MoviePage.css'
 import './styles/style.css'
 import { Movies } from '../components/Movies'
+import { Loader } from '../components/Loader'
 import { NavMenu } from '../components/NavMenu'
 export function MoviePage () {
   const { selectedMovie, media } = useParams()
@@ -22,7 +23,7 @@ export function MoviePage () {
   }, [selectedMovie])
 
   if (!movie) {
-    return <div>Loading...</div>
+    return <Loader />
   }
 
   return (

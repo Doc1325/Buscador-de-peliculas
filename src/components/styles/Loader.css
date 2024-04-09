@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+:root {
+    --color-primary: #ffffff;
+    --color-secondary: #202b38;
+    --font: 'Anton', sans-serif;
+}
+
+
+.loader {
+    max-width: fit-content;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+}
+.loader__text {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: var(--font);
+}
+
+.loader__filmstrip {
+
+
+    position: relative;
+    width: 66px;
+    height: 90px;
+    background: var(--color-primary);
+    z-index: 1;
+}
+
+.loader__filmstrip:before,
+.loader__filmstrip:after {
+    content: '';
+    position: absolute;
+    height: 120%;
+    border-left: 5px dashed var(--color-secondary);
+    animation: roll 20ms infinite;
+}
+
+.loader__filmstrip:before {
+    left: 5px;
+}
+
+.loader__filmstrip:after {
+    right: 5px;
+}
+
+@keyframes roll {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: -15px;
+    }
+}
