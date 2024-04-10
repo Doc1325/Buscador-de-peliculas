@@ -6,6 +6,8 @@ import Slideshow from '../components/Gallery'
 import { NavMenu } from '../components/NavMenu'
 import { Loader } from '../components/Loader'
 export function HomePage ({ type }) {
+  window.scrollTo(0, 0)
+
   const { movies, getMovies, loading } = useMovies({ search: '', sort: false })
   useEffect(() => {
     getMovies({ search: '', type })// paso el objeto en si

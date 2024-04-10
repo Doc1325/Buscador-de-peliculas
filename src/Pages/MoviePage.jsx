@@ -7,6 +7,8 @@ import { Movies } from '../components/Movies'
 import { Loader } from '../components/Loader'
 import { NavMenu } from '../components/NavMenu'
 export function MoviePage () {
+  window.scrollTo(0, 0)
+
   const { selectedMovie, media } = useParams()
   const [movie, setMovie] = useState(null)
   useEffect(() => {
@@ -29,7 +31,6 @@ export function MoviePage () {
   return (
     <>
       <NavMenu />
-
       {movie.clip
         ? <iframe
             src={`https://www.youtube.com/embed/${movie.clip}?&autoplay=0`}
@@ -39,6 +40,7 @@ export function MoviePage () {
           />
         : null}
       <div className='main-content'>
+
         <h1>{movie.title}</h1>
         <div className='movieInfoContainer'>
           <section className='MovieInfo-left'>
