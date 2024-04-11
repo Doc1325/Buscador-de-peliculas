@@ -25,8 +25,14 @@ export function NavMenu () {
           </button>
           <ul className={mobile === true ? 'vertical-items' : 'vertical-items hide'}>
             <li className='menu-item'>
+              <Link to='/'>
+                Inicio
+              </Link>
+            </li>
+            <li className='menu-item'>
+
               <Link to='/movies'>
-                Movies
+                Películas
               </Link>
             </li>
             <li className='menu-item'>
@@ -37,7 +43,7 @@ export function NavMenu () {
           </ul>
           <Search />
         </div>
-        <Link to='/'>
+        <Link to='/' className='main-button'>
           <img src={logo} alt='' className='logo' loading='lazy' />
         </Link>
 
@@ -45,7 +51,7 @@ export function NavMenu () {
 
           <li className='menu-item'>
             <Link to='/movies'>
-              Movies
+              Películas
             </Link>
           </li>
           <li className='menu-item'>

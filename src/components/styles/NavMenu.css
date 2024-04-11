@@ -10,6 +10,15 @@
     gap: 3rem;
     align-items: center;
 }
+.main-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.2rem;
+    gap: .5rem;
+}
 
 .menu-item a {
     color: inherit;
@@ -35,6 +44,7 @@ header {
 
 .logo {
     max-width: 200px;
+    max-height: 90%;
 }
 
 .vertical-menu {
@@ -80,6 +90,13 @@ header {
     /* Agrega estilos para escritorio aquí */
 }
 
+@media (width < 1000px ){
+
+    .main-button {
+        display: none;
+    }
+}
+
 /* Tablet Portrait */
 @media (min-width: 576px) and (max-width: 991.98px) and (orientation: portrait) {
     .horizontal-menu {
@@ -96,9 +113,7 @@ header {
 
   
 
-    .logo {
-        display: none;
-    }
+
 }
 
 /* Tablet Landscape */
@@ -135,9 +150,7 @@ header {
 
 
  
-    .logo {
-        display: none;
-    }
+  
 }
 
 /* Móvil Landscape */
@@ -154,9 +167,7 @@ header {
         font-size: 1rem;
     }
 
-    .logo {
-        display: none;
-    }
+  
 }
 
 @media (min-width: 576px) and (max-width: 890.98px) and (orientation: landscape) {

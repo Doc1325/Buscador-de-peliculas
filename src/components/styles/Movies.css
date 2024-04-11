@@ -3,8 +3,7 @@
     text-decoration: none;
   }
   .movies a:hover {
-    color: rgb(15, 116, 224);
-  }
+    color: #9fd3c7;}
   
   .movies {
     box-sizing: border-box;

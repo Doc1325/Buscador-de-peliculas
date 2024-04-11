@@ -7,8 +7,6 @@ import { Movies } from '../components/Movies'
 import { Loader } from '../components/Loader'
 import { NavMenu } from '../components/NavMenu'
 export function MoviePage () {
-  window.scrollTo(0, 0)
-
   const { selectedMovie, media } = useParams()
   const [movie, setMovie] = useState(null)
   useEffect(() => {
@@ -16,6 +14,7 @@ export function MoviePage () {
       try {
         const movieInfo = await getMovieInfo({ query: selectedMovie, type: media })
         setMovie(movieInfo)
+        window.scrollTo(0, 0)
       } catch (error) {
         console.error('Error fetching movie info:', error)
       }
@@ -27,7 +26,6 @@ export function MoviePage () {
   if (!movie) {
     return <Loader />
   }
-
   return (
     <>
       <NavMenu />

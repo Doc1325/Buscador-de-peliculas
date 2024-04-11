@@ -136,26 +136,27 @@ outline: 0;
 }
 
 /*Escritorio*/
-@media (min-width: 1199.98px)  {
+@media (min-width: 1199.98px)   {
 }
 /*Fin Escritorio*/
+
+@media (height < 500px) {
+
+    iframe {
+        height: 50vh;
+    }
+}
 
 /*Tablet*/
 /*Portrait*/
 @media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
 
-    iframe {
-        width: 100%;
-        height: 50vh;
-    }
+   
 }
 
 /*landscape*/
 @media (min-width: 991.98px) and (max-width: 1199.98px)and (orientation:landscape) {
-    iframe {
-        width: 100%;
-        height: 50vh;
-    }
+  
 }
 /*fin tablet*/
 
@@ -163,20 +164,14 @@ outline: 0;
 /*Portrait*/
 /*Default*/
 @media (max-width: 575.98px)and (orientation:portrait) {
-    iframe {
-        max-width: 400px;
-        height: 200px;
-    }
+    
     .movieInfoContainer {
         flex-direction: column;
     }
  }
 /*landscape*/
 @media (min-width: 576px) and (max-width: 991.98px) and (orientation:landscape) {
-    iframe {
-        max-width: 400px;
-        height: 200px;
-    }
+  
 
     .movieInfoContainer {
         flex-direction: column;
