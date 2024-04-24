@@ -6,13 +6,13 @@ import './styles/style.css'
 import { Movies } from '../components/Movies'
 import { Loader } from '../components/Loader'
 import { NavMenu } from '../components/NavMenu'
-export function MoviePage () {
-  const { selectedMovie, media } = useParams()
+export function MoviePage ({ type }) {
+  const { selectedMovie } = useParams()
   const [movie, setMovie] = useState(null)
   useEffect(() => {
     const fetchMovieInfo = async () => {
       try {
-        const movieInfo = await getMovieInfo({ query: selectedMovie, type: media })
+        const movieInfo = await getMovieInfo({ query: selectedMovie, type })
         setMovie(movieInfo)
         window.scrollTo(0, 0)
       } catch (error) {
@@ -85,7 +85,7 @@ export function MoviePage () {
       </div>
       <section className='similar'>
         <h2>Similares</h2>
-        <Movies movies={{ movies: movie.similar, type: media }} />
+        <Movies movies={{ movies: movie.similar, type }} />
 
       </section>
     </>

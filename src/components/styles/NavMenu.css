@@ -8,7 +8,7 @@
     padding: 0%;
     display: flex;
     gap: 3rem;
-    align-items: center;
+    
 }
 .main-button{
     display: flex;
@@ -76,9 +76,20 @@ header {
 
 
 .menu-button {
+      font-size: 24px;
+    margin: 0;
+    background-color: transparent;
     max-width: 200px;
 }
 
+
+.menu-button:hover {
+    background-color: transparent;
+}
+.menu-button:focus {
+   border: 0;
+   box-shadow: none;
+}
 .hide {
     display: none;
 }
@@ -94,6 +105,17 @@ header {
 
     .main-button {
         display: none;
+    }
+    .horizontal-menu {
+        display: none;
+    }
+
+    .vertical-menu {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 1rem;
     }
 }
 

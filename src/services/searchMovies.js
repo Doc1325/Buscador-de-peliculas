@@ -1,3 +1,5 @@
+import poster from '../assets/default_poster.png'
+
 const Links = {
   Netflix: 'https://www.netflix.com/',
   'Amazon Prime Video': 'https://www.amazon.com/Amazon-Video/b/?ie=UTF8&node=2858778011',
@@ -264,11 +266,11 @@ export async function getMovieInfo (searchParameter) {
   return {
     title: movieInfo?.title ?? movieInfo?.name,
     info: movieInfo?.overview,
-    image: `https://image.tmdb.org/t/p/w500/${movieInfo.poster_path}` ?? `https://image.tmdb.org/t/p/w500/${movieInfo.poster_path}`, // TODO: ADD DEFAULT MOVIE POSTER
+    image: movieInfo.poster_path ? `https://image.tmdb.org/t/p/w500/${movieInfo.poster_path}` : poster, // TODO: ADD DEFAULT MOVIE POSTER
     ranking: Number(movieInfo.vote_average.toFixed(1)),
     genres: movieInfo.genres[0].name,
     releaseDate: movieInfo.release_date ?? movieInfo.first_air_date,
-    duration: timeConvert(movieInfo.runtime ?? movieInfo.episode_run_time),
+    duration: movieInfo.runtime !== 0 ? timeConvert(movieInfo.runtime ?? movieInfo.episode_run_time) : 'Desconocida',
     clip: movieInfo?.videos?.results[0]?.key ?? null,
     similar: mapMovies(movieInfo.similar.results.slice(0, 8)),
     providers: mapProviders(movieInfo['watch/providers'].results.DO)
@@ -323,7 +325,7 @@ function mapMovies (movies) {
     id: movie?.id ?? '',
     title: movie?.title ?? movie?.name ?? '',
     year: movie?.release_date?.substring(0, 4) ?? movie.first_air_date?.substring(0, 4),
-    image: `https://image.tmdb.org/t/p/w500/${movie.poster_path}` ?? 'https://www.prokerala.com/movies/assets/img/no-poster-available.jpg',
+    image: movie.poster_path ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}` : poster,
     searchParameter: movie?.id,
     type: movie?.media_type
   }))

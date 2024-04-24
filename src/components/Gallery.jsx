@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './styles/Slideshow.css'
 import { getImage } from '../services/searchMovies'
 import { Loader } from './Loader'
+import { Link } from 'react-router-dom'
 function Slideshow ({ movies }) {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [image, setImage] = useState([])
@@ -42,11 +43,14 @@ function Slideshow ({ movies }) {
               key={index}
               className={`slide ${index === currentSlide ? 'slide fade-in' : 'slide fade-out'}`}
             >
-              <img src={image[index].background} alt='' className='slide-background' loading='lazy' />
+              <img src={image[index].background} alt='' className='slide-background' />
               <section className='description'>
                 <img src={image[index].logo} alt='' className='slide-logo' loading='lazy' />
-                {/* <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus blanditiis eum ab unde, sint rem aliquam cupiditate odit distinctio. Sapiente itaque amet quaerat voluptatem, molestiae hic earum ab reiciendis iste.</p> */}
+
               </section>
+              <Link to={`/${movie.type ?? movies.type}/${movie.searchParameter}`} className='more-btn'>
+                Mas información
+              </Link>
             </div>
           )
         })

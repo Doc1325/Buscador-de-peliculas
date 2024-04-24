@@ -24,8 +24,12 @@ const router = createBrowserRouter([
 
   },
   {
-    path: '/:media/:selectedMovie',
-    element: <MoviePage />
+    path: '/tv/:selectedMovie',
+    element: <MoviePage key='tv'  type='tv' />
+  },
+  {
+    path: '/movie/:selectedMovie',
+    element: <MoviePage key='movie'  type={'movie'} />
   },
   {
     path: '/search/:search/:sort?',
@@ -34,7 +38,6 @@ const router = createBrowserRouter([
 
 ])
 export function App () {
-  
   return (
     <>
       <RouterProvider router={router} />

@@ -1,6 +1,7 @@
 /* Slideshow container */
 
 .slideshow-container {
+
   position: relative;
   width: 98%;
   overflow: hidden;
@@ -45,6 +46,25 @@
 
 }
 
+
+.more-btn {
+
+  position:absolute;
+  font-weight: bold;
+
+  width: 300px;
+  box-sizing: border-box;
+  background-color: #0000007c;
+  padding: 10px 40px;
+  font-size: 1.2rem;
+  border: 2px solid transparent;
+  border-radius: 10%;
+  color: white;
+  left:calc((50% - (300px/2)));
+  bottom: 1rem;
+
+}
+
 /* Fade in animation */
 .fade-in {
   text-align: center;
@@ -82,8 +102,12 @@
 }
 
 /*Escritorio*/
-@media (min-width: 1199.98px)  {
 
+
+@media (width < 600px)  {
+  .slideshow-container{
+    display: none;
+  }
 }
 /*Fin Escritorio*/
 
@@ -103,9 +127,7 @@
 
 /*landscape*/
 @media (min-width: 991.98px) and (max-width: 1199.98px)and (orientation:landscape) {
-  .slideshow-container{
-    display: none;
-  }
+
 }
 /*fin tablet*/
 

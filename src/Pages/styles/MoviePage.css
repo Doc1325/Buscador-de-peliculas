@@ -34,8 +34,9 @@ border: none;
 display: block;
 margin-left: auto;
 margin-right:auto ;
-    height: 500px;
-   max-width: 100%;
+    min-height: 200px;
+   min-width: 300px;
+    width: 80vw;
     border-radius: 16px ;
     aspect-ratio: 20/9;
     text-align: center;
@@ -142,9 +143,7 @@ outline: 0;
 
 @media (height < 500px) {
 
-    iframe {
-        height: 50vh;
-    }
+   
 }
 
 /*Tablet*/
@@ -163,19 +162,22 @@ outline: 0;
 /*movil*/
 /*Portrait*/
 /*Default*/
-@media (max-width: 575.98px)and (orientation:portrait) {
-    
+@media (width < 600px) {
+iframe {
+    width: 95vw;
+}
     .movieInfoContainer {
         flex-direction: column;
-    }
+    } 
+}
+@media (max-width: 575.98px)and (orientation:portrait) {
+    
  }
 /*landscape*/
 @media (min-width: 576px) and (max-width: 991.98px) and (orientation:landscape) {
   
 
-    .movieInfoContainer {
-        flex-direction: column;
-    }
+  
  
 }
 /*fin movil*/
