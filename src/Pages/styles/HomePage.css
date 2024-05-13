@@ -3,9 +3,11 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    margin-top: 50px;
   
   }
+
+
+
   .Poster {
     margin-top: 1rem;
     margin-left: auto;
@@ -19,12 +21,26 @@
 
 
 main {
-  padding-top: 2rem;
   display: flex;
   justify-content: center;
   width: 100%;
 }
+
+
 .page-title{
   text-align: center;
   text-transform: capitalize;
+}
+
+.main-nav{
+
+  background-color: transparent;
+}
+
+
+@media (width < 1000px) {
+  main{
+    /* espacio para la nav */
+    margin-top: 50px; 
+  }
 }

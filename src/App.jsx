@@ -25,11 +25,11 @@ const router = createBrowserRouter([
   },
   {
     path: '/tv/:selectedMovie',
-    element: <MoviePage key='tv'  type='tv' />
+    element: <MoviePage key='tv' type='tv' />
   },
   {
     path: '/movie/:selectedMovie',
-    element: <MoviePage key='movie'  type={'movie'} />
+    element: <MoviePage key='movie' type='movie' />
   },
   {
     path: '/search/:search/:sort?',

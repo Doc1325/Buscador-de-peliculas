@@ -1,16 +1,28 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import './styles/HomePage.css'
 import { Movies } from '../components/Movies'
 import { useMovies } from '../hooks/useMovies'
 import Slideshow from '../components/Gallery'
 import { NavMenu } from '../components/NavMenu'
-import { Loader } from '../components/Loader'
+import debounce from 'just-debounce-it'
 export function HomePage ({ type }) {
-  window.scrollTo(0, 0)
-
+  const page = useRef(1)
   const { movies, getMovies, loading } = useMovies({ search: '', sort: false })
+
   useEffect(() => {
-    getMovies({ search: '', type })// paso el objeto en si
+    getMovies({ search: '', type, page: page.current })// paso el objeto en si
+    const handleScroll = debounce(() => {
+      console.log('d')
+      if (movies) {
+        if (window.innerHeight + document.documentElement.scrollTop + 1 >= document.documentElement.scrollHeight) {
+          page.current = page.current + 1
+          getMovies({ search: '', type, page: page.current })// paso el objeto en si
+        }
+      }
+    }, 200)
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   const title = {
@@ -20,16 +32,18 @@ export function HomePage ({ type }) {
   }
 
   return (
-    <div className='homepage'>
-      <NavMenu />
+    <div className='homepage' id='page'>
 
-      <h1 className='page-title'>{title[type]}</h1>
-      {!loading
-        ? <Slideshow movies={movies?.slice(0, 5)} />
-        : null}
+      {/* {<h1 className='page-title'>{title[type]}</h1>} */}
+      <div>
+        <NavMenu main />
+
+        {loading ? null : <Slideshow movies={movies?.slice(0, 5)} />}
+
+      </div>
 
       <main>
-        {loading ? <Loader /> : <Movies movies={{ movies, type: null }} />}
+        <Movies movies={{ movies, type: null }} loading={loading} />
       </main>
     </div>
   )

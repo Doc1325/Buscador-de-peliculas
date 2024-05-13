@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { getMovieInfo } from '../services/searchMovies'
+import { getMediaInfo } from '../services/mediaService.js'
 import './styles/MoviePage.css'
 import './styles/style.css'
 import { Movies } from '../components/Movies'
@@ -12,7 +12,7 @@ export function MoviePage ({ type }) {
   useEffect(() => {
     const fetchMovieInfo = async () => {
       try {
-        const movieInfo = await getMovieInfo({ query: selectedMovie, type })
+        const movieInfo = await getMediaInfo({ query: selectedMovie, type })
         setMovie(movieInfo)
         window.scrollTo(0, 0)
       } catch (error) {
@@ -57,6 +57,7 @@ export function MoviePage ({ type }) {
                   {/* <img src={logo} alt='' className='ranking-img' /> */}
                   <p className='ranking-text'> {movie.ranking}  </p>
                 </div>
+                <p><strong>Genres:</strong> {movie.genres}</p>
               </div>
             </section>
           </section>
@@ -71,10 +72,10 @@ export function MoviePage ({ type }) {
                   {
                   provider.link
                     ? <a href={provider.link} target='_blank' rel='noreferrer'>
-                      <img src={provider.providerImg} alt='' loading='lazy' />
+                      <img src={provider.providerImg} alt={provider.providerName} loading='lazy' />
 
                       </a>
-                    : <img src={provider.providerImg} alt='' loading='lazy' />
+                    : <img src={provider.providerImg} alt={provider.providerName} loading='lazy' />
 
                  }
                 </div>

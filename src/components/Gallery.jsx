@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import './styles/Slideshow.css'
-import { getImage } from '../services/searchMovies'
+import '../default.css'
+import { getImage } from '../services/mediaService.js'
 import { Loader } from './Loader'
 import { Link } from 'react-router-dom'
 function Slideshow ({ movies }) {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [image, setImage] = useState([])
-
   useEffect(() => {
     const fetchMovieImage = async () => {
       try {
@@ -34,7 +34,7 @@ function Slideshow ({ movies }) {
   }
 
   return (
-    <div className='slideshow-container'>
+    <div className='slideshow-container' id='gallery'>
 
       {image.length === movies?.length
         ? movies?.map((movie, index) => {
@@ -46,6 +46,11 @@ function Slideshow ({ movies }) {
               <img src={image[index].background} alt='' className='slide-background' />
               <section className='description'>
                 <img src={image[index].logo} alt='' className='slide-logo' loading='lazy' />
+                <ul className='genre-list'>
+                  {movie.genres.map((genre, index) => (
+                    <li key={index} className='genre-item'>{genre}</li>
+                  ))}
+                </ul>
 
               </section>
               <Link to={`/${movie.type ?? movies.type}/${movie.searchParameter}`} className='more-btn'>

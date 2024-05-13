@@ -1,14 +1,12 @@
-/* Slideshow container */
 
 .slideshow-container {
 
   position: relative;
-  width: 98%;
+  width: 100%;
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
   aspect-ratio: 20/9;
-  background-color:  #202b38;
 
 }
 
@@ -17,7 +15,7 @@
 .slide {
   display: none;
   width: 100%;
-  transition: opacity 0.5s;
+  transition: opacity 0.5s; 
 }
 
 .description {
@@ -25,7 +23,7 @@
   top: 50%;
   left: 5%;
   font-weight: bold;
-  width: 400px;
+  width: 25vw;
   text-align: justify;
 }
 
@@ -34,16 +32,13 @@
   top: 0;
   left: 0;
   width: 100%;
-  margin-top: 1rem;
 
     aspect-ratio: 20/9;
-    opacity: .5;
 }
 
 .slide-logo {
   width: 100%;
-  max-height:90px ;
-
+ aspect-ratio: 11/4;
 }
 
 
@@ -58,8 +53,6 @@
   padding: 10px 40px;
   font-size: 1.2rem;
   border: 2px solid transparent;
-  border-radius: 10%;
-  color: white;
   left:calc((50% - (300px/2)));
   bottom: 1rem;
 
@@ -84,7 +77,6 @@
 .prev, .next {
   position: absolute;
   top: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 16px;
   border: none;
@@ -101,8 +93,33 @@
   right: 0;
 }
 
+
+.genre-list{
+  display: grid;
+  list-style-type: none;
+  gap: .5rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+padding: 0;
+}
+
+.genre-item{
+  padding: 4px 5px;
+}
 /*Escritorio*/
 
+.more-btn, .genre-item{
+  color: whitesmoke;
+  border-radius: 5%;
+
+  background-color: #0000007c;
+  
+}
+.more-btn:hover, .genre-item:hover{
+  color:var(--secondary-color)
+}
 
 @media (width < 600px)  {
   .slideshow-container{

@@ -6,12 +6,11 @@ import { useState, useRef, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 
-export function NavMenu () {
+export function NavMenu ({ main }) {
   const [mobile, setMobile] = useState(false)
   const menuRef = useRef()
   useEffect(() => {
     function handler (e) {
-      console.log(e.target)
       if (!menuRef.current.contains(e.target) && !document.getElementById('menu-button').contains(e.target)) {
         setMobile(false)
       }
@@ -27,7 +26,7 @@ export function NavMenu () {
   }
   return (
     <>
-      <header>
+      <header className={main ? 'nav main-nav' : 'nav'} id={main ? 'main-nav' : ''}>
 
         <div className='vertical-menu'>
           <button onClick={handleMobileMenu} className='menu-button' id='menu-button'>
@@ -80,3 +79,15 @@ export function NavMenu () {
     </>
   )
 }
+window.addEventListener('scroll', function () {
+  const nav = document.getElementById('main-nav')
+  if (!nav) return
+  // Verificar si el elemento principal está fuera del rango de altura
+
+  if (this.scrollY > 0) {
+    nav.style.backgroundColor = 'var(--background-body)' //
+  } else {
+    nav.style.backgroundColor = '' // Restaurar el color de fondo por defecto si está dentro del rango
+  }
+
+})

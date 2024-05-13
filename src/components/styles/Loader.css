@@ -42,7 +42,7 @@
     content: '';
     position: absolute;
     height: 120%;
-    border-left: 5px dashed var(--color-secondary);
+    border-left: 5px dashed var(--background-body);
     animation: roll 20ms infinite;
 }
 

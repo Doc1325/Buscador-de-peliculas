@@ -56,7 +56,7 @@ export function Search () {
           placeholder='Avengers, Star wars ...' name='search' id=''
         />
 
-        <button type='submit'>
+        <button type='submit' className='desktop-search-button'>
           <FontAwesomeIcon icon={faSearch} />
         </button>
         {/* <input type='checkbox' name='' id='' onChange={handleSort} checked={sort} /> */}
