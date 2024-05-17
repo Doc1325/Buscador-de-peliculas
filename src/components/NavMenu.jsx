@@ -52,6 +52,13 @@ export function NavMenu ({ main }) {
                 Series
               </Link>
             </li>
+
+            <li className='menu-item'>
+              <Link to='/about'>
+                Creditos
+              </Link>
+            </li>
+
           </ul>
           <Search />
         </div>
@@ -66,12 +73,17 @@ export function NavMenu ({ main }) {
               Películas
             </Link>
           </li>
+        
           <li className='menu-item'>
             <Link to='/tv'>
               Series
             </Link>
           </li>
-
+          <li className='menu-item'>
+            <Link to='/about'>
+              Creditos
+            </Link>
+          </li>
           <li><Search /></li>
         </ul>
 
@@ -89,5 +101,4 @@ window.addEventListener('scroll', function () {
   } else {
     nav.style.backgroundColor = '' // Restaurar el color de fondo por defecto si está dentro del rango
   }
-
 })

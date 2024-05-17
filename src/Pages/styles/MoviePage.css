@@ -64,7 +64,7 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
 }
 .ranking-text{
     margin: 0;
-    color: #f6c700;
+    color: var(--secondary-color);
 }
 
 .gender-list{

@@ -1,11 +1,12 @@
-import { SearchPage } from './Pages/SearchPage'
-import { MoviePage } from './Pages/MoviePage'
-import { HomePage } from './Pages/HomePage'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { lazy, Suspense } from 'react'
+import './default.css'
 
-import {
-  createBrowserRouter,
-  RouterProvider
-} from 'react-router-dom'
+const About = lazy(() => import('./Pages/About'))
+const HomePage = lazy(() => import('./Pages/HomePage'))
+const MoviePage = lazy(() => import('./Pages/MoviePage'))
+const SearchPage = lazy(() => import('./Pages/SearchPage'))
+import '/src/Pages/styles/style.css'
 
 const router = createBrowserRouter([
   {
@@ -34,14 +35,20 @@ const router = createBrowserRouter([
   {
     path: '/search/:search/:sort?',
     element: <SearchPage />
+  },
+  {
+    path: '/about',
+    element: <About />
   }
 
 ])
 export function App () {
   return (
     <>
-      <RouterProvider router={router} />
+      <Suspense>
+        <RouterProvider router={router} />
 
+      </Suspense>
     </>
 
   )

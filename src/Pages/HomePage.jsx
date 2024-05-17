@@ -5,14 +5,13 @@ import { useMovies } from '../hooks/useMovies'
 import Slideshow from '../components/Gallery'
 import { NavMenu } from '../components/NavMenu'
 import debounce from 'just-debounce-it'
-export function HomePage ({ type }) {
+export default function HomePage ( {type} ) {
   const page = useRef(1)
   const { movies, getMovies, loading } = useMovies({ search: '', sort: false })
 
   useEffect(() => {
     getMovies({ search: '', type, page: page.current })// paso el objeto en si
     const handleScroll = debounce(() => {
-      console.log('d')
       if (movies) {
         if (window.innerHeight + document.documentElement.scrollTop + 1 >= document.documentElement.scrollHeight) {
           page.current = page.current + 1
@@ -42,7 +41,7 @@ export function HomePage ({ type }) {
 
       </div>
 
-      <main>
+      <main className='main-home'>
         <Movies movies={{ movies, type: null }} loading={loading} />
       </main>
     </div>

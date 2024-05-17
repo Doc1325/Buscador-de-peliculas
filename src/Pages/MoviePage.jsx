@@ -6,7 +6,7 @@ import './styles/style.css'
 import { Movies } from '../components/Movies'
 import { Loader } from '../components/Loader'
 import { NavMenu } from '../components/NavMenu'
-export function MoviePage ({ type }) {
+export default function MoviePage ({ type }) {
   const { selectedMovie } = useParams()
   const [movie, setMovie] = useState(null)
   useEffect(() => {
