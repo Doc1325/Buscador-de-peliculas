@@ -35,7 +35,7 @@ export function NavMenu ({ main }) {
 
  }
           </button>
-          <ul className={mobile === true ? 'vertical-items' : 'vertical-items hide'} ref={menuRef}>
+          <ul className={mobile === false ? 'vertical-items' : 'vertical-items active'} ref={menuRef}>
             <li className='menu-item'>
               <Link to='/'>
                 Inicio
@@ -73,7 +73,7 @@ export function NavMenu ({ main }) {
               Películas
             </Link>
           </li>
-        
+
           <li className='menu-item'>
             <Link to='/tv'>
               Series

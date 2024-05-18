@@ -15,9 +15,7 @@ form{
   } */
 
  
-.invisible {
-  display: none;
-}
+
 .desktop-search{
   gap: .1rem;
 }
@@ -39,6 +37,7 @@ form{
 }
 
 .mobile-search {
+  position: relative;
   display: flex;
   width: 50%;
 }
@@ -46,17 +45,28 @@ form{
 width: 100%;
 }
 .input-mobile {
-  width: 100%;
+  position: relative;
+  width: 50%;
+  right: 0%;
+  z-index: -1;
+
+  transition: right 100ms linear;
+}
+
+ .input-mobile.invisible {
+ right: -100%;
+  
 }
 .mobile-search-button {
   padding: 0;
-  background-color: transparent;
+  background-color: var(--background-body);
   font-size: 24px;
   box-shadow: none;
+  margin: 0;
+  padding-right: 6px;
 }
 
 .mobile-search-button:hover, .mobile-search-button:focus {
-  background: none;
   box-shadow: none;
 
 }
