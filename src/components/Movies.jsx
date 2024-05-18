@@ -1,5 +1,5 @@
 import poster from '../assets/default_poster.png'
-
+import { Loader } from './Loader'
 import { Link } from 'react-router-dom'
 import './styles/Movies.css'
 function ListOfMovies ({ movies, loading }) {
@@ -37,9 +37,14 @@ function SkeletonMovies () {
   return (skeletonMovieList)
 }
 
-function NoMoviesResult () {
+function NoMoviesResult (loading) {
   return (
-    <p>No se encuentran resultados para esta busqueda</p>
+    <>
+      {loading
+        ? <Loader> </Loader>
+        : <p>No se encuentran resultados para esta busqueda</p>}
+    </>
+
   )
 }
 
@@ -48,7 +53,7 @@ export function Movies ({ movies, loading }) {
 
   return (
 
-    hasmovies ? <ListOfMovies movies={movies} loading={loading} /> : <NoMoviesResult />
+    hasmovies ? <ListOfMovies movies={movies} loading={loading} /> : <NoMoviesResult loading={loading} />
 
   )
 }
