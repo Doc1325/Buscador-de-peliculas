@@ -48,14 +48,14 @@ width: 100%;
   position: relative;
   width: 50%;
   right: 0%;
-  z-index: -1;
 
   transition: right 100ms linear;
 }
 
  .input-mobile.invisible {
  right: -100%;
-  
+ z-index: -1;
+
 }
 .mobile-search-button {
   padding: 0;
