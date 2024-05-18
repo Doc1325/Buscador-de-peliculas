@@ -43,7 +43,7 @@ export async function getMediaInfo (searchParameter) {
   return {
     title: movieInfo?.title ?? movieInfo?.name,
     info: movieInfo?.overview,
-    image: movieInfo.poster_path ? `https://image.tmdb.org/t/p/w500/${movieInfo.poster_path}` : poster, // TODO: ADD DEFAULT MOVIE POSTER
+    image: movieInfo.poster_path ? `https://image.tmdb.org/t/p/w342/${movieInfo.poster_path}` : poster, // TODO: ADD DEFAULT MOVIE POSTER
     ranking: Number(movieInfo.vote_average.toFixed(1)),
     genres: movieInfo.genres[0].name,
     releaseDate: movieInfo.release_date ?? movieInfo.first_air_date,
@@ -279,7 +279,7 @@ function mapProviders (providers) {
       return {
         providerId: provider.provider_id,
         providerName: provider.provider_name,
-        providerImg: `https://image.tmdb.org/t/p/w500/${provider.logo_path}`,
+        providerImg: `https://image.tmdb.org/t/p/w92/${provider.logo_path}`,
         link: Links[provider.provider_name] ?? ''
       }
     })
@@ -290,7 +290,7 @@ function mapProviders (providers) {
       return {
         providerId: provider.provider_id,
         providerName: provider.provider_name,
-        providerImg: `https://image.tmdb.org/t/p/w500/${provider.logo_path}`,
+        providerImg: `https://image.tmdb.org/t/p/w92/${provider.logo_path}`,
         link: Links[provider.provider_name] ?? ''
       }
     })
@@ -300,7 +300,7 @@ function mapProviders (providers) {
       return {
         providerId: provider.provider_id,
         providerName: provider.provider_name,
-        providerImg: `https://image.tmdb.org/t/p/w500/${provider.logo_path}`,
+        providerImg: `https://image.tmdb.org/t/p/w92/${provider.logo_path}`,
         link: Links[provider.provider_name] ?? ''
       }
     })
@@ -316,7 +316,7 @@ function mapMedia (movies) {
     id: movie?.id ?? '',
     title: movie?.title ?? movie?.name ?? '',
     year: movie?.release_date?.substring(0, 4) ?? movie.first_air_date?.substring(0, 4),
-    image: movie.poster_path ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}` : poster,
+    image: movie.poster_path ? `https://image.tmdb.org/t/p/w342/${movie.poster_path}` : poster,
     searchParameter: movie?.id,
     type: movie?.media_type,
     genres: movie.genre_ids.map(genre => (genderMatcher(genre)))

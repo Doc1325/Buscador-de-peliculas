@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import './styles/Slideshow.css'
+import './styles/Gallery.css'
 import '../default.css'
 import { getImage } from '../services/mediaService.js'
 import { Loader } from './Loader'

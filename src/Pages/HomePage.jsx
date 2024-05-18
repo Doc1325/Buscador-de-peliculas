@@ -5,7 +5,7 @@ import { useMovies } from '../hooks/useMovies'
 import Slideshow from '../components/Gallery'
 import { NavMenu } from '../components/NavMenu'
 import debounce from 'just-debounce-it'
-export default function HomePage ( {type} ) {
+export default function HomePage ({ type }) {
   const page = useRef(1)
   const { movies, getMovies, loading } = useMovies({ search: '', sort: false })
 
@@ -24,14 +24,8 @@ export default function HomePage ( {type} ) {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const title = {
-    tv: 'series',
-    movie: 'Peliculas'
-
-  }
-
   return (
-    <div className='homepage' id='page'>
+    <div className='homepage'>
 
       {/* {<h1 className='page-title'>{title[type]}</h1>} */}
       <div>

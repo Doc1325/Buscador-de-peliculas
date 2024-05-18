@@ -1,12 +1,12 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { lazy, Suspense } from 'react'
 import './default.css'
+import './Pages/styles/style.css'
 
-const About = lazy(() => import('./Pages/About'))
+const AboutPage = lazy(() => import('./Pages/AboutPage'))
 const HomePage = lazy(() => import('./Pages/HomePage'))
 const MoviePage = lazy(() => import('./Pages/MoviePage'))
 const SearchPage = lazy(() => import('./Pages/SearchPage'))
-import '/src/Pages/styles/style.css'
 
 const router = createBrowserRouter([
   {
@@ -38,7 +38,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/about',
-    element: <About />
+    element: <AboutPage />
   }
 
 ])

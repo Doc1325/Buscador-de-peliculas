@@ -81,6 +81,7 @@
   padding: 16px;
   border: none;
   cursor: pointer;
+  background-color: var(--background-body);
 }
 
 /* Position the previous button */

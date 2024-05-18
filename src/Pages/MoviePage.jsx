@@ -48,8 +48,8 @@ export default function MoviePage ({ type }) {
             <p className='primary-info'>{movie.info}</p>
             <section className='secondary-info'>
               <div className='row'>
-                <p><strong>Released:</strong> {movie.releaseDate}</p>
-                <p><strong>Duration:</strong> {movie.duration}</p>
+                <p><strong>Fecha de estreno:</strong> {movie.releaseDate}</p>
+                <p><strong>Duración:</strong> {movie.duration}</p>
               </div>
               <div className='row'>
                 <div className='ranking-section'>
@@ -57,7 +57,7 @@ export default function MoviePage ({ type }) {
                   {/* <img src={logo} alt='' className='ranking-img' /> */}
                   <p className='ranking-text'> {movie.ranking}  </p>
                 </div>
-                <p><strong>Genres:</strong> {movie.genres}</p>
+                <p><strong>Géneros:</strong> {movie.genres}</p>
               </div>
             </section>
           </section>
