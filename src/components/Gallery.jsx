@@ -45,7 +45,9 @@ function Slideshow ({ movies }) {
             >
               <img src={image[index].background} alt='' className='slide-background' />
               <section className='description'>
-                <img src={image[index].logo} alt='' className='slide-logo' loading='lazy' />
+                {image[index].logo !== ''
+                  ? <img src={image[index].logo} alt={`logo of ${movie.title}`} className='slide-logo' loading='lazy' />
+                  : <p>{movie.title}</p>}
                 <ul className='genre-list'>
                   {movie.genres.map((genre, index) => (
                     <li key={index} className='genre-item'>{genre}</li>

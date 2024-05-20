@@ -10,7 +10,7 @@ function ListOfMovies ({ movies, loading }) {
         <li key={movie.type + ' #' + movie.id} className='movie'>
           <Link to={`/${movie.type ?? movies.type}/${movie.searchParameter}`}>
 
-            <img src={movie.image} alt={`image of ${movie.Title}`} loading='lazy' />
+            <img src={movie.image} alt={`Imagen de ${movie.title}`} loading='lazy' />
             <p className='title-text'>{movie.title}</p>
             <p>{movie.year}</p>
           </Link>

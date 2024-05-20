@@ -42,7 +42,7 @@ export default function MoviePage ({ type }) {
         <h1>{movie.title}</h1>
         <div className='movieInfoContainer'>
           <section className='MovieInfo-left'>
-            <img className='moviePoster' src={movie.image || ''} alt={`Image of ${movie.title}`} loading='lazy' />
+            <img className='moviePoster' src={movie.image || ''} alt={`Imagen de ${movie.title}`} loading='lazy' />
           </section>
           <section className='MovieInfo-right'>
             <p className='primary-info'>{movie.info}</p>
@@ -71,16 +71,13 @@ export default function MoviePage ({ type }) {
                 <div key={provider.providerId} className='providerContainer'>
                   {
                   provider.link
-                    ? <a href={provider.link} target='_blank' rel='noreferrer'>
-                      <img src={provider.providerImg} alt={provider.providerName} loading='lazy' />
-
-                      </a>
+                    ? <a href={provider.link} target='_blank' rel='noreferrer'><img src={provider.providerImg} alt={provider.providerName} loading='lazy' /> </a>
                     : <img src={provider.providerImg} alt={provider.providerName} loading='lazy' />
 
                  }
                 </div>
               )
-              : <p>Ningun proveedor disponible en tu región 😥</p>}
+              : <p>Ningun proveedor disponible en República Dominicana😥</p>}
           </div>
         </section>
       </div>

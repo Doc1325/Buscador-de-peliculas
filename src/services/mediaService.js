@@ -326,8 +326,8 @@ function mapMedia (movies) {
 export async function getImage (media) {
   const response = await fetch(END_POINTS.images(media.query, media.type), options)
   const data = await response.json()
-  const background = await data?.backdrops[0].file_path ?? ''
-  const logo = await data?.logos[0].file_path ?? ''
+  const background = await data?.backdrops[0]?.file_path ?? ''
+  const logo = await data?.logos[0]?.file_path ?? ''
 
   return { background: `https://image.tmdb.org/t/p/original/${background}`, logo: `https://image.tmdb.org/t/p/original/${logo}` }
 }
