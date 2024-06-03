@@ -54,6 +54,7 @@ export function Search () {
           value={search}
           onChange={handleChange}
           placeholder='Avengers, Star wars ...' name='search' id=''
+          className='input-desktop'
         />
 
         <button type='submit' className='desktop-search-button'>

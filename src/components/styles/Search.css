@@ -4,7 +4,13 @@ form{
       align-items: center;
   justify-content: end;
  font-size: 10px;
-    }
+  
+}
+
+
+.input-desktop {
+width: 150px;
+}
 
   .mobile-search {
     display: none;
@@ -22,6 +28,7 @@ form{
 .desktop-search-button{
   background-color: transparent;
   padding: 0;
+
   font-size: 24px;
 }
 .desktop-search-button:hover{
@@ -46,7 +53,7 @@ width: 100%;
 }
 .input-mobile {
   position: relative;
-  width: 50%;
+  width: 100%;
   right: 0%;
 
   transition: right 100ms linear;
