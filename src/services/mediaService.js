@@ -32,6 +32,7 @@ export async function searchMedia ({ search, type, page }) {
   }
 
   const data = await response.json()
+
   const movies = await data.results
   return mapMedia(movies)
 }
@@ -45,7 +46,7 @@ export async function getMediaInfo (searchParameter) {
     info: movieInfo?.overview,
     image: movieInfo.poster_path ? `https://image.tmdb.org/t/p/w342/${movieInfo.poster_path}` : poster, // TODO: ADD DEFAULT MOVIE POSTER
     ranking: Number(movieInfo.vote_average.toFixed(1)),
-    genres: movieInfo.genres[0].name,
+    genres: movieInfo?.genres[0]?.name ?? 'desconocido',
     releaseDate: movieInfo.release_date ?? movieInfo.first_air_date,
     duration: timeConvert(movieInfo.runtime ?? movieInfo.episode_run_time),
     clip: movieInfo?.videos?.results[0]?.key ?? null,
@@ -58,10 +59,10 @@ export async function getMediaInfo (searchParameter) {
 function mapProviders (providers) {
   const Links = {
     Netflix: 'https://www.netflix.com/',
-    'Amazon Prime Video': 'https://www.amazon.com/Amazon-Video/b/?ie=UTF8&node=2858778011',
+    'Amazon Prime Video': 'https://www.primevideo.com',
     'Disney Plus': 'https://www.disneyplus.com/',
     'Apple TV Plus': 'https://www.apple.com/apple-tv-plus/',
-    'Apple TV': 'https://www.apple.com/tv/',
+    'Apple TV': 'https://www.apple.com/apple-tv-plus/',
     Hulu: 'https://www.hulu.com/',
     Crunchyroll: 'https://www.crunchyroll.com/',
     fuboTV: 'https://www.fubo.tv/welcome',
@@ -73,7 +74,7 @@ function mapProviders (providers) {
     Peacock: 'https://www.peacocktv.com/',
     'Peacock Premium': 'https://www.peacocktv.com/',
     Kocowa: 'https://www.kocowa.com/',
-    'Amazon Video': 'https://www.amazon.com/Prime-Video/b/?ie=UTF8&node=2858778011',
+    'Amazon Video': 'https://www.primevideo.com',
     'Google Play Movies': 'https://play.google.com/store/movies',
     YouTube: 'https://www.youtube.com/',
     'Paramount Plus': 'https://www.paramountplus.com/',
@@ -312,15 +313,16 @@ function mapProviders (providers) {
 }
 
 function mapMedia (movies) {
-  return movies?.map(movie => ({
+  const movieList = movies.map(movie => ({
     id: movie?.id ?? '',
     title: movie?.title ?? movie?.name ?? '',
     year: movie?.release_date?.substring(0, 4) ?? movie.first_air_date?.substring(0, 4),
     image: movie.poster_path ? `https://image.tmdb.org/t/p/w342/${movie.poster_path}` : poster,
-    searchParameter: movie?.id,
+    searchParameter: movie?.id ,
     type: movie?.media_type,
-    genres: movie.genre_ids.map(genre => (genderMatcher(genre)))
+    genres: movie?.genre_ids?.map(genre => (genderMatcher(genre)) )
   }))
+  return movieList.filter(movies => movies.type != "person")
 }
 
 export async function getImage (media) {
@@ -362,7 +364,7 @@ function genderMatcher (id) {
     10752: 'Bélica',
     37: 'Western'
   }
-  return genresDictionary[id]
+  return  id ? genresDictionary[id] : "desconocido"
 }
 
 function timeConvert (n) {
