@@ -40,7 +40,7 @@ function SkeletonMovies () {
 function NoMoviesResult (loading) {
   return (
     <>
-      {loading
+      {loading == true
         ? <Loader> </Loader>
         : <p>No se encuentran resultados para esta busqueda</p>}
     </>
@@ -50,9 +50,8 @@ function NoMoviesResult (loading) {
 
 export function Movies ({ movies, loading }) {
   const hasmovies = movies.movies?.length
-
   return (
-
+    
     hasmovies ? <ListOfMovies movies={movies} loading={loading} /> : <NoMoviesResult loading={loading} />
 
   )

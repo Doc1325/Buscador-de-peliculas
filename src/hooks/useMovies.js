@@ -7,9 +7,9 @@ export function useMovies ({ search, sort }) {
   const [, setError] = useState(null)
   // en este caso el error no se usa, pero Lo hice para tener una idea de cono funcionaria un manejo de erorres con el try cathc finally
   const previousSearch = useRef(search)
+
   const getMovies = useCallback(async ({ search, type, page }) => {
     setLoading(true)
-
     try {
       const newMovies = await searchMedia({ search, type, page })
       previousSearch.current = search

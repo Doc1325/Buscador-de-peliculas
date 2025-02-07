@@ -11,7 +11,9 @@ export default function SearchPage () {
   const { movies, getMovies, loading } = useMovies({ search, sort })
   useEffect(() => {
     async function loadMovies () {
+      console.log(search)
       getMovies({ search })// paso el objeto en si
+      
     }
     loadMovies()
   }, [])
@@ -20,7 +22,7 @@ export default function SearchPage () {
       <NavMenu />
 
       <main className='searchResults'>
-        {loading ? <Loader /> : <Movies movies={{ movies, type: null }} />}
+        {loading ? <Loader /> : <Movies movies={{ movies, type: null }} loading={loading} />}
       </main>
     </div>
   )
